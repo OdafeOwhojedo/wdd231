@@ -98,11 +98,6 @@ section h2 {
   font-weight: 600;
 }
 
-.photo img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
 
 .photo {
   text-align: center;
