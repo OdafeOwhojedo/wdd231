@@ -118,6 +118,7 @@ section h2 {
 }
 
 .course-card {
+  position: relative;
   padding: 1rem;
   border-radius: 6px;
   background: #e5e7eb;
@@ -128,9 +129,6 @@ section h2 {
   border-left: 6px solid #059669;
 }
 
-.course-card {
-  position: relative;
-}
 
 .course-card[data-completed="true"]::before {
   content: "✔";
