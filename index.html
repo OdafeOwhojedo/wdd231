@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Odafe Erikevwie">
+    <meta name="description" content="WDD231 Course Home Page for Frontend Web Development">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 | Home</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <img src="images/big-anchor.svg" alt="Site Logo" width="512" height="512">
+            <span>Odafe Erikevwie</span>
+            <button id="ham-button" class="hamburger"></button>
+        </header>
+        <nav id="nav" class="navigation">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="#">Chamber</a></li>
+                    <li><a href="#">Final</a></li>
+                </ul>
+        </nav>
+
+        <main>
+          <h1>Home</h1>
+          <div class="top-sections">
+                <section class="about">
+                    <h2>About Me</h2>
+                    <p>
+                        My name is Odafe Erikevwie. I am a Nigerian and hails from Okpe local government area of Delta state in the South-South geopolitical region of the country. I am happily married to my wife whose name is Edisemi Nancy Odafe and between us, we have four boys and three girls. I am currently an online  student of Brigham Young University Idaho via the BYU Pathway study program. I am studying  Web and Computer Software Development and I hope to graduate with a degree in Software Development.
+                        In this first term of school year 2026, I am studying a course titled WDD 231 "web Frontend Development" and at the end of the term, if I successfully complete this term study, I would obtain my first certificate toward obtaining a degree in Software Development. This course highly is tasking and it is focused on training us to be proficient  in the design and development of the  frontend of websites that 
+                        have level of accessibility, interactive, performance and optimization using HTML, CSS and JavaScript. I enjoy building clean,
+                        responsive, and user-friendly web interfaces while continuously
+                        improving my JavaScript and CSS skills.
+                    </p>
+                </section>
+
+                <section class="photo">
+                <h2>Student Photo</h2>
+                    <img
+                        src="images/profile.jpg"
+                        alt="Photo of Odafe Erikevwie"
+                        width="300"
+                        height="300"
+                        loading="lazy"
+                    >
+                </section>
+         </div>
+
+            <section>
+                <h2>Certificate Courses</h2>
+
+                <div class="filters">
+                <button data-filter="all">All Courses</button>
+                <button data-filter="WDD">WDD Courses</button>
+                <button data-filter="CSE">CSE Courses</button>
+                </div>
+
+                <p class="credits">Total Credits: <span id="totalCredits">0</span></p>
+
+                <div id="courseCards" class="course-grid"></div>
+            </section>
+
+            
+        </main>
+
+        <footer>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/erikevwieodafe" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn Account" width="35" height="35"></a>
+                <a href="https://github.com/OdafeOwhojedo" target="_blank"><img src="images/github.svg" alt="Github Account" width="35" height="35"></a>
+                <a href="https://www.facebook.com/eodafe" target="_blank"><img src="images/facebook.svg" alt="Facebook Account" width="35" height="35"></a>
+            </div>
+
+            <p>
+                &copy; <span id="currentyear"></span>
+                Odafe Erikevwie | Nigeria
+            </p>
+
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
