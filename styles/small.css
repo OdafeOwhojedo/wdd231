@@ -15,7 +15,8 @@ header {
   align-items: end;
   padding: 5px 0 5px 10px;
   border-bottom: solid 1px #ddd;
-  background: #eee;
+  /* background: #eee; */
+  background-color: rgba(238, 238, 238, 0.95);
   
 }
 
