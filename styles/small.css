@@ -64,13 +64,13 @@ header span{
 .navigation a{
   display: block;
   padding: .8rem 10px;
-  color: #3D4058;
+  color: #3d4058;
   text-decoration: none;
   border-bottom: solid 1px #ddd;
 }
 
 .navigation li.active{
-  background-color: #CBD5E1;
+  background-color: #cbd5E1;
   font-weight: 600;
   border-bottom: 3px solid #10B981;
 }
@@ -80,7 +80,7 @@ h1{
 }
 
 .navigation a:hover{
-  background-color: #E07a5f;
+  background-color: #e07a5f;
 }
 
 
