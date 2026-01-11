@@ -38,14 +38,6 @@
     border-radius: 8px;
   }
 
-  /* nav {
-    display: block !important;
-  } */
-
-  /* nav ul {
-    display: flex;
-    justify-content: center;
-  } */
 
   .course-grid {
     grid-template-columns: repeat(3, 1fr);
