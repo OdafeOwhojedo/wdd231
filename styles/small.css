@@ -164,7 +164,8 @@ section h2 {
 }
 
 footer {
-  background: #eee;
+  background-color: rgba(238, 238, 238, 0.95);
+  /* background: #eee; */
   color: black;
   text-align: center;
   padding: 1rem;
