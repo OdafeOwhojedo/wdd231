@@ -38,12 +38,12 @@ header span{
     cursor: pointer;
 }
 
-.hamburger::after{
+.hamburger::before{
     content: "\2630";
     font-size: 2rem;
 }
 
-.hamburger.show::after {
+.hamburger.show::before {
   content: "\00D7";
 
 }

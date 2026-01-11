@@ -7,9 +7,3 @@ navButton.addEventListener("click", () => {
 
 
 
-// const navButton = document.getElementById("menu");
-// const nav = document.getElementById("nav");
-
-// menuButton.addEventListener("click", () => {
-//   nav.classList.toggle("open");
-// });
