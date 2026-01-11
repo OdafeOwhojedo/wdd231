@@ -1,0 +1,51 @@
+/* Base styles */
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  text-align: center;
+  background-color: #1f3a5f;
+  color: #fff;
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* Cards Grid */
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+/* Individual card */
+section {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+section p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+}
+
+section img {
+  margin-top: 0.75rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
