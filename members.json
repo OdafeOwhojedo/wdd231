@@ -1,0 +1,252 @@
+{
+  "members": [
+    {
+      "name": "Simtech Creative",
+      "address": "Naomi Shopping Mall, 7 Airport Road Junction Effurun",
+      "phone": "+234 706 183 9068",
+      "website": "www.simtech.com.ng",
+      "image": "smetec.webp",
+      "membership": 1,
+      "description": "Marketing and business development",
+      "established": 2017,
+      "staff": "1 to 5"
+    },
+    {
+      "name": "Bedouin Hotels & Suites ",
+      "address": "5 Rev. J Oloye street Ugbolokposo Warri",
+      "phone": "+234-805-117-2211",
+      "website": "www.bedouinhotelsltd.com",
+      "image": "bedouinhotels.webp",
+      "membership": 2,
+      "description": "hotel and catering",
+      "established": 2019,
+      "staff": "26 to 50"
+    },
+    {
+      "name": "Zitronix Engineering Limited",
+      "address": "Suite 2 G2 CK Value City, opposite DSC Police Post, Udu",
+      "phone": "+234-708-470-9074",
+      "website": "www.zitronixeng.com",
+      "image": "zitronix.webp",
+      "membership": 2,
+      "category": "Power electronics and renewable energy solutions",
+      "established": 2008,
+      "staff": "11 to 15"
+    },
+    {
+      "name": "Safari Pharmacy",
+      "address": "Legacy House Airport Road, by Westend Bus-stop Effurun",
+      "phone": "+234-807-422-2674",
+      "website": "www.safaripharmacy.com",
+      "image": "safari-pharmacy.webp",
+      "membership": 3,
+      "category": "Pharmacy and consultation",
+      "established": 2007,
+      "staff": "11 to 15"
+    },
+    {
+      "name": "S2 Generation Services Limited",
+      "address": "Warri, Nigeria",
+      "phone": "+234-903-781-8888",
+      "website": "www.s2gsltd.com",
+      "image": "generation.webp",
+      "membership": 2,
+      "category": "Oil and Gas",
+      "established": 2014,
+      "staff": "6 to 10"
+    },
+    {
+      "name": "Prolectro Limited",
+      "address": "33 Airport Road, near Matrix Petrol Station, Effurun",
+      "phone": "+234-805-950-7500",
+      "website": "www.prolectrogroup.com",
+      "image": "prolectro.webp",
+      "membership": 1,
+      "category": "Welding and Fabrication",
+      "established": 2007,
+      "staff": "10 to 18"
+    },
+    {
+      "name": "Charrisa Company",
+      "address": "2 Airport Road, Effurun",
+      "phone": "+234-708-143-3184",
+      "website": "www.charissacompany.com",
+      "image": "charrisa-company.webp",
+      "membership": 1,
+      "category": "Hospitality and Supermarket",
+      "established": 2018,
+      "staff": "12 to 20"
+    },
+    {
+      "name": "Jad Catering Services",
+      "address": "47 Enerhen Road, Effurun",
+      "phone": "+234-806-800-0053",
+      "website": "www.jadgroup.org",
+      "image": "jad-catering-services.webp",
+      "membership": 3,
+      "category": "Hospitality and Catering",
+      "established": 2006,
+      "staff": "150 to 400"
+    },
+    {
+      "name": "Torima Technology Limited",
+      "address": "Favor Bakery Along Aka Avenue Ekpan",
+      "phone": "+234-812-634-3045",
+      "website": "www.torimatechnology.com",
+      "image": "torima.webp",
+      "membership": 1,
+      "category": "Communication, Automation, Security and Safety systems solutions",
+      "established": 2014,
+      "staff": "11 to 15"
+    },
+    {
+      "name": "Crystal Flick Resources Limited",
+      "address": "1 Honorable Emma Tee close, off Isaiah road Ubeji",
+      "phone": "+234-810-050-6778",
+      "website": "www.crystalflick.com",
+      "image": "crystal-flick.webp",
+      "membership": 1,
+      "category": "Oil and Gas, Construction and Hospitality",
+      "established": 2020,
+      "staff": "26 to 50"
+    },
+    {
+      "name": "Lily Hospitals Limited",
+      "address": "6 Brisibe street, off Etuwewe Road Warri",
+      "phone": "+234-803-963-7765",
+      "website": "www.lilyhospitals.com",
+      "image": "lily-hospitals.webp",
+      "membership": 3,
+      "category": "Medicine and Surgery",
+      "established": 1984,
+      "staff": "501 to 1000"
+    },
+    {
+      "name": "360richpeople Social Network Limited",
+      "address": "C15 Nelson Egege Close Odjikpata, Orhuwhorun",
+      "phone": "+234-813-793-6840",
+      "website": "www.360aproko.com",
+      "image": "360richpeople.webp",
+      "membership": 2,
+      "category": "Networking and Job Sourcing",
+      "established": 2017,
+      "staff": "16 to 25"
+    },
+    {
+      "name": "Shoppima",
+      "address": "6 Enerhen Road, Effurun",
+      "phone": "+234-909-310-9314",
+      "website": "www.shoppima.com",
+      "image": "shoppima.webp",
+      "membership": 1,
+      "category": "Digital Marketing and Solutions",
+      "established": 2019,
+      "staff": "1 to 5"
+    },
+    {
+      "name": "AnneLouisa Events",
+      "address": "151 P.T.I Road Effurun",
+      "phone": "+234-803-817-2861",
+      "website": "www.annelouisaevents.com",
+      "image": "annelouisa-events.webp",
+      "membership": 1,
+      "category": "Event planners",
+      "established": 2011,
+      "staff": "1 to 5"
+    },
+    {
+      "name": "Swixcon Inc",
+      "address": "42 Opete DSC Warri",
+      "phone": "+234-802-295-6287",
+      "website": "www.swixcon.com",
+      "image": "swixcon.webp",
+      "membership": 2,
+      "category": "Technology, Security, Construction and Decoration",
+      "established": 206,
+      "staff": "51 to 100"
+    },
+    {
+      "name": "Tochsolcom",
+      "address": "4 Airport Road, Warri",
+      "phone": "+234-805-275-2735",
+      "website": "www.techsolcomit.com.ng",
+      "image": "techsolcom.webp",
+      "membership": 1,
+      "category": "Information Technology",
+      "established": 2014,
+      "staff": "6 to 10"
+    },
+    {
+      "name": "Chrish Car Hire",
+      "address": "51 NNPC Housing Complex Road, Ekpan",
+      "phone": "+234-706-806-0588",
+      "website":"www.cherishcarhire.com",
+      "image": "cherish-car-hire.webp",
+      "membership": 1,
+      "category": "Logistics",
+      "established": 2022,
+      "staff": "6 to 10"
+    }
+    ,
+    {
+      "name": "Pmastech Limited",
+      "address": "Osubu Warri",
+      "phone": "+234-903-263-1050",
+      "website": "www.pmastech.com",
+      "image": "pmastec.webp",
+      "membership": 2,
+      "category": "Information Technology",
+      "established":1997,
+      "staff": "6 to 10"
+    }
+    ,
+    {
+      "name": "Rimakit",
+      "address": "B22 Off Orhuwhorun Road, Udu",
+      "phone": "+234-805-760-1562",
+      "website": "www.rimakit.com",
+      "image": "rimakit.webp",
+      "membership": 1,
+      "category": "Marketing",
+      "established":2015,
+      "staff": "50 to 100"
+    }
+    ,
+    {
+      "name": "Clarion Steel Products",
+      "address": "1 Link Road, Ajamimogha, Warri",
+      "phone": "+234-813-714-0794",
+      "website": "www.clarionsteelproducts.com",
+      "image": "clarion-steel.webp",
+      "membership": 1,
+      "category": "Information Technology",
+      "established":2014,
+      "staff": "6 to 10"
+    }
+    ,
+    {
+      "name": "LinkOrion Technology",
+      "address": "Suite F3C Warri",
+      "phone": "+234-811-293-5098",
+      "website": "www.linkorion.com",
+      "image": "linkorion.webp",
+      "membership": 1,
+      "category": "Information Technology",
+      "established":2014,
+      "staff": "6 to 10"
+    }
+    ,
+    {
+      "name": "Sunny Day Plastic Company Limited",
+      "address": "KM 2 Opete Express Road, Warri",
+      "phone": "+234-906-601-2357",
+      "website": "www.sunnydayplastic.ng.com",
+      "image": "sunnyday-plastic.webp",
+      "membership": 1,
+      "category": "Manufacturing",
+      "established":2016,
+      "staff": "16 to 25"
+    }
+
+  ]
+}
