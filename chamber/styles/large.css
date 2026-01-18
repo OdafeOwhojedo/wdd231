@@ -57,5 +57,9 @@
   #spotlight-container {
   grid-template-columns: repeat(3, 1fr);
   }
+  #weather-icon {
+    width: 128px;
+    height: 128px;
+  }
 
 }
