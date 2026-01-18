@@ -205,10 +205,6 @@ nav a.active {
   border-color: var(--secondary);
 }
 
-
-/* #members {
-  gap: 1rem;
-} */
 .member-details {
   margin: 0.75rem 0;
 }
