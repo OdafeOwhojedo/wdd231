@@ -54,4 +54,8 @@
     grid-template-columns: 2fr 3fr 1fr;
     align-items: center;
   }
+  #spotlight-container {
+  grid-template-columns: repeat(3, 1fr);
+  }
+
 }

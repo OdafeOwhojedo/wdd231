@@ -109,6 +109,37 @@ main {
   margin-top: var(--header-height);
 }
 
+.hero {
+  position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #0056b3;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
 footer {
    background-color: rgba(238, 238, 238, 0.95);
   color: var(--text-dark);
@@ -230,6 +261,22 @@ header.scrolled {
 
   clip-path: inset(50%);
 }
+
+.spotlights {
+  padding: 1rem;
+}
+
+#spotlight-container {
+  display: grid;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
 
 
 

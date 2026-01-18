@@ -5,7 +5,7 @@
         <meta name="description" content="Warri Chamber of Commerce business directory showcasing local businesses and organizations.">
         <meta name="author" content="Odafe Erikevwie">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Directory | Warri Chamber of Commerce</title>
+        <title> Home| Warri Chamber of Commerce</title>
         <!-- Google Font -->
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +22,9 @@
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
         <link rel="stylesheet" href="styles/large.css">
-        <script src="scripts/directory.js" defer></script>
+        <script src="scripts/spotlight.js" defer></script>
         <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/weather.js" defer></script>
     </head>
 
     <body>
@@ -36,45 +37,60 @@
         </header>
         <nav id="nav" class="navigation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
                     <li><a href="#">Discover</a></li>
-                    <li><a href="directory.html" class="active">Directory</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="#">Join</a></li>
                 </ul>
         </nav>
 
-        <main>
-                <h1>Business Directory</h1>
+        <main id="home">
 
-                <!-- VIEW + FILTER CONTROLS -->
-                <div class="controls">
-                        <div class="view-controls" >
-                            <button id="grid" class="active" aria-label="Grid view">
-                                <img src="images/grid.svg" alt="" width="24" height="24">
-                            </button>
+            <!-- HERO -->
+            <section class="hero">
+                <img src="images/warri.webp" alt="City of Warri business district">
+                <div class="hero-content">
+                <h1>Warri Chamber of Commerce</h1>
+                <p>Supporting local business growth and economic development</p>
+                <a href="join.html" class="cta">Join the Chamber</a>
+                </div>
+            </section>
 
-                            <button id="list" aria-label="List view">
-                                <img src="images/list.svg" alt="" width="24" height="24">
-                            </button>
-                        </div>
+            <!-- CURRENT EVENTS -->
+            <section class="events">
+                <h2>Current Events</h2>
+                <ul>
+                <li>📅 Business Networking Night – March 15</li>
+                <li>📢 SME Growth Workshop – April 2</li>
+                </ul>
+            </section>
 
-                        <label for="levelFilter">
-                             Membership Level:
-                            <select id="levelFilter">
-                                <option value="all">All</option>
-                                <option value="1">Member</option>
-                                <option value="2">Silver</option>
-                                <option value="3">Gold</option>
-                            </select>
-                        </label>
+            <!-- WEATHER -->
+            <section class="weather">
+                <h2>Weather in Warri</h2>
+
+                <div class="weather-current">
+                    <img id="weather-icon" alt="" loading="lazy">
+                    <div id="weather-current"></div>
                 </div>
 
-                <!-- MEMBERS OUTPUT -->
-                <section id="members" class="members grid">
-                    <h2 class="visually-hidden">Chamber Members</h2>
-                    <!-- Member cards injected here by JavaScript -->
-                </section>
+                <div id="weather-forecast"></div>
+            </section>
+
+            <!-- <section class="weather">
+                <h2>Weather in Warri</h2>
+                <div id="weather-current"></div>
+                <div id="weather-forecast"></div>
+            </section> -->
+
+            <!-- SPOTLIGHTS -->
+            <section class="spotlights">
+                <h2>Member Spotlights</h2>
+                <div id="spotlight-container"></div>
+            </section>
+
         </main>
+
 
         
 
