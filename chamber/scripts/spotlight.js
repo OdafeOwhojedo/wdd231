@@ -18,7 +18,7 @@ async function loadSpotlights() {
     card.classList.add('spotlight-card');
 
     card.innerHTML = `
-      <img src="images/members/${member.image}" alt="${member.name} logo">
+      <img src="images/${member.image}" alt="${member.name} logo">
       <h3>${member.name}</h3>
       <p>${member.address}</p>
       <p>${member.phone}</p>
@@ -29,5 +29,14 @@ async function loadSpotlights() {
     spotlightContainer.appendChild(card);
   });
 }
+// Footer dates
+document.querySelector("#year").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = document.lastModified;
+
+// Header transparency on scroll
+const header = document.querySelector("header");
+window.addEventListener("scroll", () => {
+  header.classList.toggle("scrolled", window.scrollY > 50);
+});
 
 loadSpotlights();

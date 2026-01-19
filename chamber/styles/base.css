@@ -276,6 +276,13 @@ header.scrolled {
   width: 96px;
   height: 96px;
 }
+#weather-icon {
+  filter: saturate(1.8) contrast(1.3) drop-shadow(0 4px 6px rgba(0,0,0,0.25));
+}
+.weather {
+  border-left: 6px solid #f4b400;
+  padding-left: 1rem;
+}
 
 
 
