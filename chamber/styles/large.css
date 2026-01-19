@@ -61,5 +61,18 @@
     width: 128px;
     height: 128px;
   }
+  .why-join ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 
+  .why-join li {
+    border-bottom: none;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  
 }
