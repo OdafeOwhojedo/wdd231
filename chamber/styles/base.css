@@ -127,6 +127,10 @@ main {
   text-align: center;
   background: rgba(0,0,0,0.4);
   color: #fff;
+  max-width: 600px;
+  background-color: rgba(0,0,0,0.55);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
 }
 
 .cta {
@@ -137,6 +141,10 @@ main {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  border-radius: 0.5rem;
+}
+.cta:hover {
+  background-color: #b58925;
 }
 
 
@@ -257,25 +265,8 @@ header.scrolled {
 
   clip-path: inset(50%);
 }
-.hero-content {
-  max-width: 600px;
-  background-color: rgba(0,0,0,0.55);
-  padding: 1.5rem;
-  border-radius: 0.75rem;
-}
-.cta {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #c79b2e;
-  color: #000;
-  font-weight: 600;
-  border-radius: 0.5rem;
-}
 
-.cta:hover {
-  background-color: #b58925;
-}
+
 .weather-note {
   font-size: 0.9rem;
   opacity: 0.85;
