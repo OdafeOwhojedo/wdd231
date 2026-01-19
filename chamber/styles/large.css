@@ -21,28 +21,10 @@
     border: none;
 
   }
-
-   /* header, main, nav, footer{
-    max-width: 800px;
-    margin: 0, auto;
-  }  */
   
-
-/* @media (min-width: 640px) {
-  nav ul {
-    display: flex;
-    gap: 2rem;
-  } */
-
   #members.grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
-
-
-/* @media (min-width: 900px) {
-  header {
-    padding: 0 2rem;
-  } */
 
   main {
     max-width: 1200px;
