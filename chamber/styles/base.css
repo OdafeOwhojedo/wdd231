@@ -248,7 +248,7 @@ header.scrolled {
  #members img {
   max-width: 100%;
   height: auto;
-} *
+} 
 
  footer p {
   margin: 0.25rem 0;
@@ -333,14 +333,7 @@ a, button {
   border-left: 6px solid #f4b400;
   padding-left: 1rem;
 }
-* {
-  box-sizing: border-box;
-}
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
 
 /* header {
   background: #003366;
@@ -604,6 +597,9 @@ dialog {
   justify-content: center;
   cursor: pointer;
   color: #333;
+  transition: 
+    background-color 0.25s ease,
+    transform 0.15s ease;
 }
 
 .close-modal:hover,
@@ -623,11 +619,6 @@ dialog {
 button:focus:not(:focus-visible),
 a:focus:not(:focus-visible) {
   outline: none;
-}
-.close-modal {
-  transition: 
-    background-color 0.25s ease,
-    transform 0.15s ease;
 }
 
 .close-modal:hover,
