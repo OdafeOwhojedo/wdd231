@@ -180,7 +180,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  color: var(--secondary);
+  color: #800000;
 }
 
 /* Directory layout */
@@ -334,13 +334,6 @@ a, button {
   padding-left: 1rem;
 }
 
-
-/* header {
-  background: #003366;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-} */
 
 .join-layout {
   display: block;
