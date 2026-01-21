@@ -317,6 +317,7 @@ a, button {
 .why-join li {
   padding: 0.5rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  
 }
 
 .why-join li:last-child {
