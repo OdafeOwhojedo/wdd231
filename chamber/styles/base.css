@@ -609,7 +609,52 @@ dialog {
 .close-modal:hover,
 .close-modal:focus {
   background-color: #dfe4ea;
-} */
+} 
+/* ==========================
+   ACCESSIBLE FOCUS STYLES
+========================== */
+
+:focus-visible {
+  outline: 3px solid #2563eb; /* international blue */
+  outline-offset: 3px;
+}
+
+/* Limit focus ring to keyboard users only */
+button:focus:not(:focus-visible),
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+.close-modal {
+  transition: 
+    background-color 0.25s ease,
+    transform 0.15s ease;
+}
+
+.close-modal:hover,
+.close-modal:focus-visible {
+  transform: scale(1.08);
+}
+.membership-modal[open] .modal-content {
+  animation: modalEnter 0.3s ease-out;
+}
+
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
 
 
 

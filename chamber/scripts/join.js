@@ -21,6 +21,14 @@ closeButtons.forEach(btn => {
   });
 });
 
+document.addEventListener("keydown", event => {
+  if (event.key === "Escape") {
+    document.querySelectorAll("dialog[open]").forEach(dialog => {
+      dialog.close();
+    });
+  }
+});
+
 
 // Footer dates
 document.querySelector("#year").textContent = new Date().getFullYear();
