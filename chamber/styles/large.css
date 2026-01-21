@@ -56,5 +56,21 @@
     border-radius: 0.5rem;
     text-align: center;
   }
+  .join-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  .membership-cards {
+    margin-top: 0;
+  }
+  .confirmation-card {
+    padding: 3rem 3rem;
+  }
+
+  .confirmation-card h1 {
+    font-size: 2rem;
+  }
   
 }
