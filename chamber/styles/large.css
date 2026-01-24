@@ -1,6 +1,6 @@
 /* large.css */
 
-@media (min-width: 760px) {
+@media (min-width: 64rem) {
   header{
     grid-template-columns: 24px auto;
   }
@@ -71,6 +71,10 @@
 
   .confirmation-card h1 {
     font-size: 2rem;
+  }
+  #discover-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   
 }

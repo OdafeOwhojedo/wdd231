@@ -1,0 +1,8 @@
+@media (min-width: 38rem) {
+        #discover-cards div{
+  grid-template-areas: 
+  "photograph name"
+  "photograph description"
+  "photograph location";
+}
+}

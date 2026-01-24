@@ -5,7 +5,7 @@
         <meta name="description" content="Warri Chamber of Commerce business directory showcasing local businesses and organizations.">
         <meta name="author" content="Odafe Erikevwie">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Thank You| Warri Chamber of Commerce</title>
+        <title> Discover Warri| Warri Chamber of Commerce</title>
         <!-- Google Font -->
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,47 +24,39 @@
 
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/medium.css">
         <link rel="stylesheet" href="styles/large.css">
+        <script type="module" src="scripts/discover.js" defer></script>
         <script src="scripts/navigation.js" defer></script>
-        <script src="scripts/thankyou.js" defer></script>
-        
     </head>
 
     <body>
-        <header>
-            <img src="images/members_logo.webp" alt="Warri Chamber of Commerce Logo" >
+        <header class="site-header logo">
+        
+                <img src="images/members_logo.webp" alt="Warri Chamber of Commerce Logo" >
                 <span >Warri Chamber Of Commence</span>
-            <button id="ham-button" class="hamburger"></button>
+                <button id="ham-button" class="hamburger"></button>
+            
         </header>
         <nav id="nav" class="navigation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
-                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" class="active">Discover</a></li>
                     <li><a href="join.html">Join</a></li>
                 </ul>
         </nav>
+        <main class="discover-main">
+                <div id="discover-cards">
+                    
+                </div>
+                <section class="visit-message" id="visitMessage"></sect>
 
-        <main class="thankyou">
-            <section class="confirmation-card">
-                <h1>Thank You for Joining the Chamber</h1>
-                <p class="confirmation-intro">
-                We appreciate your interest in the Warri Chamber of Commerce. Below is a summary of your submitted information.
-                </p>
+                
 
-                <ul class="confirmation-details">
-                    <li><strong>First Name:</strong> <span id="fname"></span></li>
-                    <li><strong>Last Name:</strong> <span id="lname"></span></li>
-                    <li><strong>Email:</strong> <span id="email"></span></li>
-                    <li><strong>Phone:</strong> <span id="phone"></span></li>
-                    <li><strong>Organization:</strong> <span id="org"></span></li>
-                    <li><strong>Submitted On:</strong> <span id="date"></span></li>
-                </ul>
+                
 
-                <a href="index.html" class="btn-primary">Return to Home</a>
-            </section>
         </main>
-
         
         <footer>
             <p>Contact: info@warrichamber.org | +234 800 000 0000</p>

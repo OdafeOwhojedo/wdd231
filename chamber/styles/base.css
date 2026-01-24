@@ -639,6 +639,48 @@ a:focus:not(:focus-visible) {
     transition: none !important;
   }
 }
+.discover-main {
+  padding: 1rem;
+}
+
+#discover-cards div{
+  margin: 1rem 8px;
+  border: 1px solid #999;
+  background-color: #eee;
+  border-radius: 8px;
+  display: grid;
+  grid-template-areas: 
+  "name"
+  "photograph"
+  "description"
+  "location";
+}
+#discover-cards div h2{
+  margin: 1rem 10px;
+  grid-area: name;
+}
+#discover-cards div img{
+  width: 100%;
+  grid-area: photograph;
+}
+#discover-cards div p{
+  margin: 1rem 10px;
+  grid-area: description;
+}
+#discover-cards div address{
+  margin: 1rem 10px;
+  grid-area: location;
+}
+
+.visit-message {
+  background-color: #f0f4ff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+
 
 
 
