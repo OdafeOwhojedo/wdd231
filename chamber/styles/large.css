@@ -72,9 +72,11 @@
   .confirmation-card h1 {
     font-size: 2rem;
   }
-  #discover-cards{
+   #discover-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: stretch;
   }
   
 }

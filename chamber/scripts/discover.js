@@ -1,58 +1,39 @@
-import { discoverItems } from "../data/discoverWarri.mjs";
+import { discoverItems } from "../data/discover.mjs";
 
-/* ---------------------------------------------------
-   1. Grab reference to the DIV container
---------------------------------------------------- */
 const cardsContainer = document.getElementById("discover-cards");
 
-/* ---------------------------------------------------
-   2. Function to display all discover items
---------------------------------------------------- */
 function displayDiscoverItems(items) {
-  items.forEach((item, index) => {
-
-    /* ----- Card container ----- */
+  items.forEach((item) => {
     const card = document.createElement("div");
     card.classList.add("discover-card");
 
-    /* Optional: grid-area hook for CSS */
-    card.style.gridArea = `card${index + 1}`;
-
-    /* ----- Title ----- */
     const title = document.createElement("h2");
     title.textContent = item.title;
 
-    /* ----- Photo ----- */
     const figure = document.createElement("figure");
+
     const image = document.createElement("img");
-    image.src = "images/${item.image}";
+    image.src = item.image;
     image.alt = item.title;
     image.loading = "lazy";
+    image.width = 300;
+    image.height = 200;
+
     figure.appendChild(image);
 
-    /* ----- Address ----- */
     const address = document.createElement("address");
     address.textContent = item.address;
 
-    /* ----- Description ----- */
     const description = document.createElement("p");
     description.textContent = item.description;
 
-    /* ----- Assemble card ----- */
-    card.appendChild(title);
-    card.appendChild(figure);
-    card.appendChild(address);
-    card.appendChild(description);
-
-    /* ----- Append to container ----- */
+    card.append(title, figure, address, description);
     cardsContainer.appendChild(card);
   });
 }
 
-/* ---------------------------------------------------
-   3. Call function to display items
---------------------------------------------------- */
 displayDiscoverItems(discoverItems);
+
 
 /* ---------- Visit Message ---------- */
 const visitMessage = document.getElementById("visitMessage");
@@ -74,3 +55,6 @@ if (!lastVisit) {
 }
 
 localStorage.setItem("lastVisit", now);
+// Footer dates
+document.querySelector("#year").textContent = new Date().getFullYear();
+document.querySelector("#lastModified").textContent = document.lastModified;
