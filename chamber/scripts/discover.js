@@ -27,7 +27,19 @@ function displayDiscoverItems(items) {
     const description = document.createElement("p");
     description.textContent = item.description;
 
-    card.append(title, figure, address, description);
+    /* ✅ Learn More Button (REQUIRED) */
+    const button = document.createElement("button");
+    button.type = "button";
+    button.textContent = "Learn More";
+    button.classList.add("learn-more");
+
+    /* Optional: Accessibility enhancement */
+    button.setAttribute(
+      "aria-label",
+      `Learn more about ${item.title}`
+    );
+
+    card.append(title, figure, address, description, button);
     cardsContainer.appendChild(card);
   });
 }
