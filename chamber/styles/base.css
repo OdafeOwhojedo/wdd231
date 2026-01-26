@@ -661,6 +661,8 @@ a:focus:not(:focus-visible) {
 }
 #discover-cards div img{
   width: 100%;
+  width: 300px;
+  height: 200px;
   grid-area: photograph;
 }
 #discover-cards div p{
@@ -671,11 +673,6 @@ a:focus:not(:focus-visible) {
   margin: 1rem 10px;
   grid-area: location;
 }
-#discover-cards div img{
-  width: 300px;
-  height: 200px;
-}
-
 .visit-message {
   background-color: #f0f4ff;
   padding: 1rem;
