@@ -559,9 +559,10 @@ dialog {
     transform: translateY(0);
   }
 }
-#goldModal .modal-header h2 {
+/* #goldModal .modal-header h2 {
   color: #b8860b;
-}
+  background-color: #000000;
+} */
  .modal-header {
   display: flex;
   align-items: center;
