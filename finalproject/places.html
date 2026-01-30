@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover notable places across Nigeria.">
+  <title>Discover Nigeria | Places</title>
+
+  <!-- Base + Responsive CSS -->
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/mobile.css">
+  <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 640px)">
+  <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 1024px)">
+  <!-- Page Script -->
+  <script src="scripts/places.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="places.html" aria-current="page">Places</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discover Nigeria</h1>
+
+    <section id="places" aria-label="List of places">
+      <!-- Cards injected by JavaScript -->
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <dialog id="placeDialog">
+    <article class="modal-content">
+      <h2 id="dialogTitle"></h2>
+      <img id="dialogImage" alt="">
+      <p id="dialogDescription"></p>
+      <p><strong>State:</strong> <span id="dialogState"></span></p>
+      <p><strong>Category:</strong> <span id="dialogCategory"></span></p>
+      <button id="closeDialog">Close</button>
+    </article>
+  </dialog>
+
+  
+</body>
+</html>

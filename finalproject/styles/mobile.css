@@ -1,0 +1,14 @@
+nav ul {
+  display: none;
+  flex-direction: column;
+}
+
+nav button {
+  display: block;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}

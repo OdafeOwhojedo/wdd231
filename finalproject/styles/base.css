@@ -1,0 +1,43 @@
+:root {
+  --primary: #0b6e4f;
+  --accent: #f4a261;
+  --light: #ffffff;
+  --dark: #1f1f1f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(11, 110, 79, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header a {
+  color: var(--light);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  padding-top: 90px; /* prevents content hiding under fixed header */
+}

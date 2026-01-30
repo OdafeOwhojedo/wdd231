@@ -1,0 +1,139 @@
+{
+  "places": [
+    {
+      "id": 1,
+      "name": "Zuma Rock",
+      "state": "Niger State",
+      "category": "Natural Landmark",
+      "description": "A massive monolith located near Abuja, often referred to as the Gateway to Abuja.",
+      "image": "zuma_rock.webp",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "Olumo Rock",
+      "state": "Ogun State",
+      "category": "Historical Site",
+      "description": "A historic rock formation used as a fortress during inter-tribal wars in the 19th century.",
+      "image": "olumo-rock.webp",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Osun-Osogbo Sacred Grove",
+      "state": "Osun State",
+      "category": "Cultural Heritage",
+      "description": "A UNESCO World Heritage Site dedicated to the goddess Osun and Yoruba traditions.",
+      "image": "osun_sacred_grove2.webp",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "name": "Idanre Hills",
+      "state": "Ondo State",
+      "category": "Natural Landscape",
+      "description": "Ancient hills with cultural significance and breathtaking views.",
+      "image": "idanre-hills2.webp",
+      "featured": false
+    },
+    {
+      "id": 5,
+      "name": "Sukur Cultural Landscape",
+      "state": "Adamawa State",
+      "category": "Cultural Heritage",
+      "description": "An ancient settlement recognized by UNESCO for its cultural value.",
+      "image": "sukur_cultural_landscape.webp",
+      "featured": false
+    },
+    {
+      "id": 6,
+      "name": "Kajuru Castle",
+      "state": "Kaduna State",
+      "category": "Architectural Site",
+      "description": "A medieval-style castle built on a hilltop with panoramic views.",
+      "image": "kajuru_castle.webp",
+      "featured": false
+    },
+    {
+      "id": 7,
+      "name": "Aso Rock",
+      "state": "Federal Capital Territory",
+      "category": "Natural Landmark",
+      "description": "A prominent rock formation located near Nigeria’s seat of power.",
+      "image": "aso-rock.webp",
+      "featured": false
+    },
+    {
+      "id": 8,
+      "name": "Yankari Game Reserve",
+      "state": "Bauchi State",
+      "category": "Wildlife Reserve",
+      "description": "Nigeria’s most popular wildlife park, home to elephants and natural warm springs.",
+      "image": "yankari_game_reserve.webp",
+      "featured": true
+    },
+    {
+      "id": 9,
+      "name": "Ogbunike Caves",
+      "state": "Anambra State",
+      "category": "Natural Wonder",
+      "description": "A network of caves with spiritual and cultural significance.",
+      "image": "ogbunike_caves.webp",
+      "featured": false
+    },
+    {
+      "id": 10,
+      "name": "Nike Art Gallery",
+      "state": "Lagos State",
+      "category": "Art & Culture",
+      "description": "One of the largest art galleries in West Africa showcasing Nigerian art.",
+      "image": "nike_art_gallery.webp",
+      "featured": true
+    },
+    {
+      "id": 11,
+      "name": "Lekki Conservation Centre",
+      "state": "Lagos State",
+      "category": "Nature Reserve",
+      "description": "A protected natural area featuring Africa’s longest canopy walkway.",
+      "image": "lekki-conservation.jpg",
+      "featured": true
+    },
+    {
+      "id": 12,
+      "name": "Erin Ijesha Waterfalls",
+      "state": "Osun State",
+      "category": "Waterfall",
+      "description": "A seven-level waterfall surrounded by lush greenery.",
+      "image": "erin_ijesha_waterfalls.webp",
+      "featured": false
+    },
+    {
+      "id": 13,
+      "name": "Slave History Museum",
+      "state": "Lagos State",
+      "category": "Museum",
+      "description": "A museum preserving the history of the transatlantic slave trade.",
+      "image": "badagry-heritage-museum2.webp",
+      "featured": false
+    },
+    {
+      "id": 14,
+      "name": "Gashaka-Gumti National Park",
+      "state": "Taraba State",
+      "category": "National Park",
+      "description": "Nigeria’s largest national park, rich in biodiversity and scenic landscapes.",
+      "image": "gashaka-gumti-park.webp",
+      "featured": false
+    },
+    {
+      "id": 15,
+      "name": "Obudu Mountain Resort",
+      "state": "Cross River State",
+      "category": "Tourist Resort",
+      "description": "A popular mountain resort known for its cool climate and cable car.",
+      "image": "obudu.webp",
+      "featured": true
+    }
+  ]
+}

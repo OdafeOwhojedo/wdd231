@@ -1,0 +1,10 @@
+@media (min-width: 1025px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  header nav {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
