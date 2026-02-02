@@ -1,10 +1,5 @@
-@media (min-width: 1025px) {
-  .card-grid {
+@media (min-width: 900px) {
+  #places {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  header nav {
-    max-width: 1200px;
-    margin: auto;
   }
 }

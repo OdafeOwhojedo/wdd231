@@ -1,88 +1,163 @@
-// ================================
-// places.js
-// ================================
+/* ===========================
+   Global State
+=========================== */
 
-// DOM references
-const placesContainer = document.querySelector("#places");
-const dialog = document.querySelector("#placeDialog");
-const dialogTitle = document.querySelector("#dialogTitle");
-const dialogImage = document.querySelector("#dialogImage");
-const dialogDescription = document.querySelector("#dialogDescription");
-const dialogState = document.querySelector("#dialogState");
-const dialogCategory = document.querySelector("#dialogCategory");
-const closeDialogBtn = document.querySelector("#closeDialog");
+let allPlaces = [];
+let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 
-const DATA_URL = "data/places.json";
+/* ===========================
+   DOM Ready Guard
+=========================== */
 
-// ================================
-// Fetch places data
-// ================================
-async function getPlaces() {
-  try {
-    const response = await fetch(DATA_URL);
-    if (!response.ok) {
-      throw new Error("Failed to load places data");
+document.addEventListener("DOMContentLoaded", () => {
+
+  const placesContainer = document.querySelector("#places");
+  const categoryFilter = document.querySelector("#filter");
+  const stateFilter = document.querySelector("#stateFilter");
+  const modal = document.querySelector("#placeModal");
+
+  if (!placesContainer) return;
+
+  /* ===========================
+     Fetch Data
+  =========================== */
+
+  async function getPlaces() {
+    try {
+      const response = await fetch("data/places.json");
+      if (!response.ok) throw new Error("Data fetch failed");
+
+      const data = await response.json();
+      allPlaces = data.places;
+
+      if (stateFilter) populateStateFilter(allPlaces);
+      displayPlaces(allPlaces);
+
+    } catch (error) {
+      placesContainer.innerHTML =
+        "<p>Unable to load places at this time.</p>";
+      console.error(error);
+    }
+  }
+
+  getPlaces();
+
+  /* ===========================
+     Display Cards
+  =========================== */
+
+  function displayPlaces(places) {
+    placesContainer.innerHTML = "";
+
+    places.forEach(place => {
+      const card = document.createElement("article");
+      card.classList.add("place-card");
+
+      const img = document.createElement("img");
+      img.src = place.image;
+      img.alt = place.name;
+      img.loading = "lazy";
+
+      const title = document.createElement("h2");
+      title.textContent = place.name;
+
+      const location = document.createElement("p");
+      location.textContent = `${place.state} • ${place.category}`;
+
+      const detailsBtn = document.createElement("button");
+      detailsBtn.textContent = "View Details";
+      detailsBtn.addEventListener("click", () => openModal(place));
+
+      const favBtn = document.createElement("button");
+      favBtn.textContent = favorites.includes(place.id)
+        ? "★ Favorited"
+        : "☆ Add Favorite";
+
+      favBtn.addEventListener("click", () =>
+        toggleFavorite(place.id, favBtn)
+      );
+
+      card.append(img, title, location, detailsBtn, favBtn);
+      placesContainer.appendChild(card);
+    });
+  }
+
+  /* ===========================
+     Modal Logic
+  =========================== */
+
+  function openModal(place) {
+    if (!modal || typeof modal.showModal !== "function") return;
+
+    modal.innerHTML = `
+      <h2 id="modalTitle">${place.name}</h2>
+      <p><strong>State:</strong> ${place.state}</p>
+      <p><strong>Category:</strong> ${place.category}</p>
+      <p>${place.description}</p>
+      <button id="closeModal">Close</button>
+    `;
+
+    modal.showModal();
+
+    const closeBtn = modal.querySelector("#closeModal");
+    closeBtn.focus();
+    closeBtn.addEventListener("click", () => modal.close());
+  }
+
+  /* ===========================
+     Favorites
+  =========================== */
+
+  function toggleFavorite(id, button) {
+    if (favorites.includes(id)) {
+      favorites = favorites.filter(fav => fav !== id);
+      button.textContent = "☆ Add Favorite";
+    } else {
+      favorites.push(id);
+      button.textContent = "★ Favorited";
     }
 
-    const data = await response.json();
-    displayPlaces(data.places);
-  } catch (error) {
-    console.error(error);
-    placesContainer.innerHTML =
-      "<p>Unable to load places at this time.</p>";
+    localStorage.setItem("favorites", JSON.stringify(favorites));
   }
-}
 
-// ================================
-// Display place cards
-// ================================
-function displayPlaces(places) {
-  places.forEach(place => {
-    const card = document.createElement("article");
-    card.classList.add("place-card");
+  /* ===========================
+     Filters
+  =========================== */
 
-    const img = document.createElement("img");
-    img.src = `images/${place.image}`;
-    img.alt = place.name;
-    img.loading = "lazy";
+  function populateStateFilter(data) {
+    const states = [...new Set(data.map(p => p.state))];
 
-    const title = document.createElement("h2");
-    title.textContent = place.name;
+    states.forEach(state => {
+      const option = document.createElement("option");
+      option.value = state;
+      option.textContent = state;
+      stateFilter.appendChild(option);
+    });
+  }
 
-    const state = document.createElement("p");
-    state.innerHTML = `<strong>State:</strong> ${place.state}`;
+  function applyFilters() {
+    let filtered = allPlaces;
 
-    const button = document.createElement("button");
-    button.textContent = "View Details";
-    button.addEventListener("click", () => openDialog(place));
+    if (categoryFilter && categoryFilter.value !== "all") {
+      filtered = filtered.filter(
+        p => p.category === categoryFilter.value
+      );
+    }
 
-    card.append(img, title, state, button);
-    placesContainer.appendChild(card);
-  });
-}
+    if (stateFilter && stateFilter.value !== "all") {
+      filtered = filtered.filter(
+        p => p.state === stateFilter.value
+      );
+    }
 
-// ================================
-// Open modal dialog
-// ================================
-function openDialog(place) {
-  dialogTitle.textContent = place.name;
-  dialogImage.src = `images/${place.image}`;
-  dialogImage.alt = place.name;
-  dialogDescription.textContent = place.description;
-  dialogState.textContent = place.state;
-  dialogCategory.textContent = place.category;
+    displayPlaces(filtered);
+  }
 
-  dialog.showModal();
-}
+  if (categoryFilter) {
+    categoryFilter.addEventListener("change", applyFilters);
+  }
 
-// ================================
-// Close modal dialog
-// ================================
-closeDialogBtn.addEventListener("click", () => {
-  dialog.close();
+  if (stateFilter) {
+    stateFilter.addEventListener("change", applyFilters);
+  }
 });
-
-// ================================
-// Initialize
-// ================================
-getPlaces();

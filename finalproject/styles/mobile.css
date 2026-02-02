@@ -1,14 +1,28 @@
-nav ul {
-  display: none;
-  flex-direction: column;
-}
+@media (max-width: 599px) {
 
-nav button {
-  display: block;
-}
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: var(--primary);
+    position: absolute;
+    top: 64px;
+    right: 0;
+    width: 200px;
+  }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+  nav ul.open {
+    display: flex;
+  }
+
+  #menuButton {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #places {
+    grid-template-columns: 1fr;
+  }
 }

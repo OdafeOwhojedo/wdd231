@@ -16,24 +16,44 @@
 </head>
 
 <body>
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="places.html" aria-current="page">Places</a>
-      <a href="contact.html">Contact</a>
+  <header class="site-header ">
+    <img src="images/nok-terracotta.webp" alt="Explore Naija logo">
+    <nav aria-label="Main navigation">
+      <button id="menuButton" aria-label="Toggle navigation" aria-expanded="false">
+        &#x2630;
+      </button>
+      <ul id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html" class="active">Places</a></li>
+      </ul>
     </nav>
+
   </header>
 
   <main>
     <h1>Discover Nigeria</h1>
 
-    <section id="places" aria-label="List of places">
+    <div id="places" aria-label="List of places">
       <!-- Cards injected by JavaScript -->
+    </div>
+    <section>
+      <label for="filter">Filter by category:</label>
+      <select id="filter">
+        <option value="all">All Categories</option>
+        <!-- <option value="Historical">Historical</option>
+        <option value="Nature">Nature</option>
+        <option value="Cultural">Cultural</option> -->
+      </select>
+      <label for="stateFilter">State</label>
+      <select id="stateFilter">
+        <option value="all">All States</option>
+      </select>
     </section>
+
   </main>
 
   <!-- Modal -->
-  <dialog id="placeDialog">
+  <dialog id="placeModal">
     <article class="modal-content">
       <h2 id="dialogTitle"></h2>
       <img id="dialogImage" alt="">
@@ -43,7 +63,9 @@
       <button id="closeDialog">Close</button>
     </article>
   </dialog>
+  <footer>
 
+  </footer>
   
 </body>
 </html>
