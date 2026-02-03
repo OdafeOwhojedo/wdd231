@@ -27,4 +27,62 @@
   #places {
     grid-template-columns: 1fr;
   }
+  /* ===========================
+   Mobile Navigation (Slide-in)
+  =========================== */
+
+  #menuButton {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  #navList {
+    position: fixed;
+    top: 64px; /* header height */
+    right: 0;
+
+    width: 70%;
+    max-width: 300px;
+    height: calc(100vh - 64px);
+
+    background-color: rgba(11, 110, 79, 0.95);
+
+    list-style: none;
+    padding: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+
+    z-index: 999;
+  }
+
+  /* ACTIVE STATE */
+  #navList.open {
+    transform: translateX(0);
+  }
+
+  /* Hide menu links on desktop */
+  @media (min-width: 768px) {
+    #menuButton {
+      display: none;
+    }
+
+    #navList {
+      position: static;
+      transform: none;
+      height: auto;
+      flex-direction: row;
+      background: transparent;
+      padding: 0;
+    }
+  }
+
 }

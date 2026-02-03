@@ -178,3 +178,45 @@ document.addEventListener("DOMContentLoaded", () => {
     stateFilter.addEventListener("change", applyFilters);
   }
 });
+/* ===========================
+   Mobile Menu Toggle
+=========================== */
+
+const menuButton = document.querySelector("#menuButton");
+const navList = document.querySelector("#navList");
+
+menuButton.addEventListener("click", () => {
+  const isOpen = navList.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", isOpen);
+});
+
+/* Close menu when a link is clicked */
+navList.addEventListener("click", (e) => {
+  if (e.target.tagName === "A") {
+    navList.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+  }
+});
+document.addEventListener("click", (e) => {
+  const isClickInsideMenu = navList.contains(e.target);
+  const isClickOnButton = menuButton.contains(e.target);
+
+  if (!isClickInsideMenu && !isClickOnButton) {
+    navList.classList.remove("open");
+    menuButton.setAttribute("aria-expanded", "false");
+  }
+});
+/* ===========================
+   Header Color Change on Scroll
+=========================== */
+
+const header = document.querySelector(".site-header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 40) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+
