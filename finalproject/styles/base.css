@@ -2,6 +2,17 @@
    Base Styles (All Viewports)
 ================================ */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --primary: #0b6e4f;
   --secondary: #f4a261;
@@ -39,6 +50,27 @@ header {
 }
 
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 1rem;
+
+  background-color: rgba(11, 110, 79, 0.85);
+  backdrop-filter: blur(6px);
+
+  z-index: 1000;
+}
+
+
+/* .site-header {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
@@ -46,7 +78,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
+} */
 
 header img {
   height: 40px;
@@ -67,7 +99,9 @@ section {
 
 /* Offset for fixed header */
 main {
-  padding-top: 80px 1rem 2rem;
+  padding: 1rem;
+  margin-top: 80px; /* prevents content hiding behind fixed header */
+  /* padding-top: 80px 1rem 2rem; */
 }
 
 /* ==============================
