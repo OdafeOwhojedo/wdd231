@@ -38,6 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "<p>Unable to load places at this time.</p>";
       console.error(error);
     }
+    populateCategoryFilter(allPlaces);
+    populateStateFilter(allPlaces);
+    displayPlaces(allPlaces);
+
   }
 
   getPlaces();
