@@ -1,6 +1,7 @@
 @media (max-width: 599px) {
 
   nav ul {
+    position: absolute;
     display: none;
     flex-direction: column;
     background-color: var(--primary);
