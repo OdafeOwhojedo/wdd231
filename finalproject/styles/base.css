@@ -90,6 +90,10 @@ nav a {
 nav a.active {
   border-bottom: 3px solid var(--secondary);
 }
+#menuButton {
+  display: none;
+}
+
 
 /* ==============================
    Cards

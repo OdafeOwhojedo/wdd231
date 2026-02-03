@@ -15,6 +15,7 @@
   }
 
   #menuButton {
+    display: block;
     font-size: 2rem;
     background: none;
     border: none;
