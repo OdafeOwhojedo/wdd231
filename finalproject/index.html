@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explore Naija | Discover Nigeria</title>
+    <meta name="description" content="Explore cultural, historical, and natural places across Nigeria.">
+    <meta name="author" content="Odafe Erikevwie">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Base + Responsive CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 1024px)">
+    <!-- Page Script -->
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <img src="images/nok_terracotta.webp" alt="Explore Naija logo">
+
+        <nav aria-label="Main navigation">
+            <button id="menuButton" aria-label="Toggle navigation" aria-expanded="false">
+                &#x2630;
+                <span></span>
+            </button>
+
+            <ul id="navList">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="places.html">Places</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= MAIN ================= -->
+    <main id="home">
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Discover Nigeria</h1>
+                <p>
+                    Explore Nigeria’s cultural heritage, historical landmarks,
+                    and breathtaking natural attractions — all in one place.
+                </p>
+                <a href="places.html" class="cta-button">Explore Places</a>
+            </div>
+        </section>
+
+        <!-- INTRO -->
+        <section class="intro">
+            <h2>What is Explore Naija?</h2>
+            <p>
+                <strong>Explore Naija</strong> is a digital guide designed to showcase
+                Nigeria’s rich diversity — from ancient historical sites to vibrant
+                cultural centers and natural wonders.
+            </p>
+            <p>
+                Whether you are a student, tourist, or curious explorer,
+                this platform helps you discover places worth learning about
+                and visiting.
+            </p>
+        </section>
+
+        <!-- FEATURES -->
+        <section class="features">
+            <h2>What You Can Do</h2>
+
+            <div class="feature-grid">
+                <article>
+                    <h3>Browse by State</h3>
+                    <p>
+                        Discover places across Nigeria by selecting a specific state
+                        or region.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Learn the History</h3>
+                    <p>
+                        Each place includes descriptions that explain its cultural
+                        or historical importance.
+                    </p>
+                </article>
+
+                <article>
+                    <h3>Save Favorites</h3>
+                    <p>
+                        Mark places as favorites so you can easily revisit them later.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section class="preview reveal">
+            <h2>Featured Destinations</h2>
+            <p>Here are a few places you can explore across Nigeria.</p>
+        
+            <div class="preview-grid">
+                <article>
+                    <h3>Historical Sites</h3>
+                    <p>Ancient landmarks that shaped Nigeria’s history.</p>
+                </article>
+        
+                <article>
+                    <h3>Cultural Centers</h3>
+                    <p>Experience traditions, art, and local heritage.</p>
+                </article>
+        
+                <article>
+                    <h3>Natural Wonders</h3>
+                    <p>Waterfalls, parks, and breathtaking landscapes.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- CALL TO ACTION -->
+        <section class="home-cta">
+            <h2>Start Exploring Nigeria Today</h2>
+            <p>
+                Ready to discover amazing places across Nigeria?
+                Browse our curated list of destinations now.
+            </p>
+            <a href="places.html" class="cta-button">View All Places</a>
+        </section>
+
+    </main>
+    <div id="scrollProgress"></div>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <p>© 2026 | Explore Naija</p>
+    </footer>
+
+    
+</body>
+
+</html>

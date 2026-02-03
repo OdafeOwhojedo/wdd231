@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Explore Naija</title>
+    <meta name="description" content="Contact Explore Naija for questions, feedback, or collaboration.">
+    <meta name="author" content="Odafe Erikevwie">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- Base + Responsive CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 1024px)">
+    <!-- Page Script -->
+    <script src="scripts/places.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <img src="images/nok-terracotta.webp" alt="Explore Naija logo">
+
+        <nav aria-label="Main navigation">
+            <button id="menuButton" aria-label="Toggle navigation" aria-expanded="false">
+                &#x2630;
+                <span></span>
+            </button>
+
+            <ul id="navList">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="places.html">Places</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-intro">
+            <h1>Contact Explore Naija</h1>
+            <p>
+                Have questions, suggestions, or feedback?
+                Fill out the form below and we’ll get back to you.
+            </p>
+        </section>
+
+        <section class="contact-form">
+            <form method="get" action="form-response.html">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 | Explore Naija</p>
+    </footer>
+
+    
+</body>
+
+</html>

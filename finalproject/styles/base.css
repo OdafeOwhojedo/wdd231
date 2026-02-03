@@ -208,4 +208,142 @@ button:focus {
   background-color: rgba(11, 110, 79, 1);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
+/* ===========================
+   HERO SECTION
+=========================== */
 
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)),
+    url("../images/Osun-sacred-grove1.webp");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  text-align: center;
+  color: #ffffff;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* CTA BUTTON */
+.cta-button {
+  display: inline-block;
+  background-color: #f4a261;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background-color: #e48f4a;
+}
+section {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.features {
+  background-color: #f9f9f9;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 2rem;
+}
+/* ===========================
+   SCROLL REVEAL
+=========================== */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    transition: none;
+    transform: none;
+  }
+}
+.feature-grid article {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-grid article:hover,
+.feature-grid article:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+.preview-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.preview-grid article {
+  border-left: 4px solid #f4a261;
+  padding-left: 1rem;
+}
+.cta-button {
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.04);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta-button {
+    animation: none;
+  }
+}
+#scrollProgress {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  height: 3px;
+  background-color: #f4a261;
+  width: 0%;
+  z-index: 999;
+}
