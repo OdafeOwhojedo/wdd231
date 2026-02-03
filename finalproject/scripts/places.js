@@ -134,6 +134,19 @@ document.addEventListener("DOMContentLoaded", () => {
       stateFilter.appendChild(option);
     });
   }
+  function populateCategoryFilter(data) {
+  if (!categoryFilter) return;
+
+  const categories = [...new Set(data.map(p => p.category))];
+
+  categories.forEach(cat => {
+    const option = document.createElement("option");
+    option.value = cat;
+    option.textContent = cat;
+    categoryFilter.appendChild(option);
+  });
+}
+
 
   function applyFilters() {
     let filtered = allPlaces;
