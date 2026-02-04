@@ -112,7 +112,7 @@ export const discoverItems = [
     {
       "title": "Shoprite",
       "image": "images/shoprite2.webp",
-      "address": "Located Effurun Town",
+      "address": "Located in Effurun Town",
       "description": "All your shopping needs are met here."
     }
     ,
