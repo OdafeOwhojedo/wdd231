@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact | Explore Naija</title>
-    <meta name="description" content="Contact Explore Naija for questions, feedback, or collaboration.">
+    <meta name="description" content="Get in touch with Explore Naija for questions, feedback, or collaboration.">
     <meta name="author" content="Odafe Erikevwie">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,19 +14,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap"
         rel="stylesheet">
 
-    <!-- Base + Responsive CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/mobile.css">
-    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 768px) and (max-width: 1023px)">
     <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 1024px)">
-    <!-- Page Script -->
-    <script src="scripts/places.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
+    <!-- JS -->
+    <script src="js/navigation.js"></script>
 </head>
 
 <body>
+    <!-- ================= HEADER ================= -->
     <header class="site-header">
-        <img src="images/nok-terracotta.webp" alt="Explore Naija logo">
+        <img src="images/nok_terracotta.webp" alt="Explore Naija logo">
 
         <nav aria-label="Main navigation">
             <button id="menuButton" aria-label="Toggle navigation" aria-expanded="false">
@@ -42,31 +42,65 @@
         </nav>
     </header>
 
+    <!-- ================= MAIN ================= -->
     <main>
-        <section class="contact-intro">
-            <h1>Contact Explore Naija</h1>
-            <p>
-                Have questions, suggestions, or feedback?
-                Fill out the form below and we’ll get back to you.
-            </p>
+
+        <!-- INTRO / HERO -->
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <h1>Let’s Connect</h1>
+                <p>
+                    Have questions, suggestions, or insights about Nigeria’s cultural
+                    and historical places? We’d love to hear from you.
+                </p>
+            </div>
         </section>
 
-        <section class="contact-form">
-            <form method="get" action="form-response.html">
-                <label for="name">Full Name</label>
-                <input id="name" name="name" required>
+        <!-- CONTACT INFO + FORM -->
+        <section class="contact-wrapper reveal">
 
-                <label for="email">Email Address</label>
-                <input id="email" name="email" type="email" required>
+            <!-- INFO PANEL -->
+            <div class="contact-info">
+                <h2>Why Contact Explore Naija?</h2>
+                <ul>
+                    <li>📍 Suggest new places to feature</li>
+                    <li>📚 Share historical or cultural insights</li>
+                    <li>🤝 Collaborate on educational content</li>
+                    <li>💬 Provide feedback or corrections</li>
+                </ul>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <p class="contact-note">
+                    We respect your privacy. Your information will only be used
+                    to respond to your message.
+                </p>
+            </div>
 
-                <button type="submit">Send Message</button>
-            </form>
+            <!-- FORM -->
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+
+                <form method="get" action="form-response.html">
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" required>
+
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
         </section>
+
     </main>
 
+    <!-- ================= FOOTER ================= -->
     <footer>
         <p>© 2026 | Explore Naija</p>
     </footer>

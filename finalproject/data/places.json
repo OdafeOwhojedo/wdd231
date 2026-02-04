@@ -98,7 +98,7 @@
       "state": "Lagos State",
       "category": "Nature Reserve",
       "description": "A protected natural area featuring Africa’s longest canopy walkway.",
-      "image": "images/lekki_conservation.webp",
+      "image": "images/lekki-conservation5.webp",
       "featured": true
     },
     {
@@ -136,6 +136,42 @@
       "description": "A popular mountain resort known for its cool climate and cable car.",
       "image": "images/obudu.webp",
       "featured": true
+    },
+    {
+      "id": 16,
+      "name": "Sungbo's Eredo",
+      "state": "Ogun State",
+      "category": "Cultural Heritage",
+      "description": "A stunning 100-mile-long system of walls and ditches, one of the largest single monuments in Africa, built by a pre-colonial Yoruba kingdom.",
+      "image": "images/sungbos-eredo2.webp",
+      "featured": true
+    },
+    {
+      "id": 17,
+      "name": "Oba's Palace & Benin City Walls",
+      "state": "Edo State",
+      "category": "Architectural Site",
+      "description": "The heart of the Benin Kingdom. Though the original was destroyed in 1897, the rebuilt palace and the remnants of the vast ancient walls (the world's largest earthworks) speak to of a mighty empire.",
+      "image": "images/oba-of-benin.webp",
+      "featured": true
+    },
+    {
+      "id": 18,
+      "name": "National Museum, Benin City",
+      "state": "Edo State",
+      "category": "Museum",
+      "description": " Houses the world's most significant collection of Benin Bronzes (brass, ivory, and wood artifacts) looted in 1897 and repatriated, telling the story of the kingdom's artistry.",
+      "image": "images/national-museum-benin.webp",
+      "featured": false
+    },
+    {
+      "id": 19,
+      "name": "National Museum, Ile-Ife",
+      "state": "Osun State",
+      "category": "Museum",
+      "description": "Ile-Ife, the cradle of the Yourbas, believed to be the site of creation. Visit the Ife Museum for exquisite terracotta and bronze heads",
+      "image": "images/ife-museum.webp",
+      "featured": false
     }
   ]
 }

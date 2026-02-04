@@ -9,3 +9,19 @@ menuButton.addEventListener("click", () => {
 
   menuButton.setAttribute("aria-expanded", !expanded);
 });
+function updateFavoritesCount() {
+  const favorites =
+    JSON.parse(localStorage.getItem("favorites")) || [];
+  const countEl = document.getElementById("favoritesCount");
+
+  if (countEl) {
+    countEl.textContent = favorites.length;
+  }
+}
+
+updateFavoritesCount();
+window.addEventListener("storage", updateFavoritesCount);
+window.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("loaded");
+});
+
