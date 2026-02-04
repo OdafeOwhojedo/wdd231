@@ -25,7 +25,7 @@
       "name": "Osun-Osogbo Sacred Grove",
       "state": "Osun State",
       "category": "Cultural Heritage",
-      "description": "A UNESCO World Heritage Site dedicated to the goddess Osun and Yoruba traditions.",
+      "description": "A UNESCO World Heritage Site dedicated to the goddess Osun and Yoruba traditions. It is more than a forest, it's a living artwork with sculptures dedicated to the goddess Osun",
       "image": "images/osun_sacred_grove2.webp",
       "featured": true
     },
@@ -43,7 +43,7 @@
       "name": "Sukur Cultural Landscape",
       "state": "Adamawa State",
       "category": "Cultural Heritage",
-      "description": "An ancient settlement recognized by UNESCO for its cultural value.",
+      "description": "A UNESCO site featuring a Hidi's (chief's) palace, terraced fields, and sacred symbols of a culture that peaked in the 16th century.",
       "image": "images/sukur_cultural_landscape.webp",
       "featured": false
     },
@@ -70,7 +70,7 @@
       "name": "Yankari Game Reserve",
       "state": "Bauchi State",
       "category": "Wildlife Reserve",
-      "description": "Nigeria’s most popular wildlife park, home to elephants and natural warm springs.",
+      "description": "Nigeria’s most popular wildlife park, home to elephants, lions and the spectacular Wikki Warm Springs for a natural warm-water bath..",
       "image": "images/yankari_game_reserve.webp",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "name": "Ogbunike Caves",
       "state": "Anambra State",
       "category": "Natural Wonder",
-      "description": "A network of caves with spiritual and cultural significance.",
+      "description": "A network of caves with spiritual and cultural significance. A system of interconnected caves held sacred by the local community, steeped in myth and history.",
       "image": "images/ogbunike_caves.webp",
       "featured": false
     },
@@ -151,7 +151,7 @@
       "name": "Oba's Palace & Benin City Walls",
       "state": "Edo State",
       "category": "Architectural Site",
-      "description": "The heart of the Benin Kingdom. Though the original was destroyed in 1897, the rebuilt palace and the remnants of the vast ancient walls (the world's largest earthworks) speak to of a mighty empire.",
+      "description": "The heart of the Benin Kingdom. Though the original was destroyed in 1897, the rebuilt palace and the remnants of the vast ancient walls (the world's largest earthworks) speak to of a mighty empire. The spiritual and cultural nucleus of the Benin Kingdom. The architecture, plaques, and rituals here are centuries old.",
       "image": "images/oba-of-benin.webp",
       "featured": true
     },
@@ -169,9 +169,135 @@
       "name": "National Museum, Ile-Ife",
       "state": "Osun State",
       "category": "Museum",
-      "description": "Ile-Ife, the cradle of the Yourbas, believed to be the site of creation. Visit the Ife Museum for exquisite terracotta and bronze heads",
+      "description": "Ile-Ife, the cradle of the Yourbas, believed to be the site of creation, Ile Ife is considered the birthplace of humanity (Oduduwa) in Yoruba mythology. Visit the Ife Museum for exquisite terracotta and bronze heads dating back to 500-800 AD",
       "image": "images/ife-museum.webp",
       "featured": false
-    }
+    },
+    {
+      "id": 20,
+      "name": "Freedom Park",
+      "state": "Lagos State",
+      "category": "National Park",
+      "description": "Once a colonial prison, now a vibrant venue for concerts, art exhibitions, and plays. It symbolizes transformation.",
+      "image": "images/freedom_park3.webp",
+      "featured": false
+    },
+    {
+      "id": 21,
+      "name": "Kano City Walls and Gates",
+      "state": "Kano State",
+      "category": "Architectural Site",
+      "description": "The remnants of a 14km ancient mud-brick wall with 15 gates that protected the commerce and people of one of Africa's oldest major trading hubs.",
+      "image": "images/kano-city-walls2.webp",
+      "featured": true
+    },
+    {
+      "id": 22,
+      "name": "Gidan Makama Museum",
+      "state": "Kano State",
+      "category": "Museum",
+      "description": "A beautiful example of Sudanese architecture, showcasing Kanuri and Hausa history. Housed in a 15th-century historical building, it's a premier museum for Kanawan history, culture, and the Hajj.",
+      "image": "images/gidan-makama-museum.webp",
+      "featured": true
+    },
+    {
+      "id": 23,
+      "name": "Durbin Ta Sallah",
+      "state": "Kano State",
+      "category": "Art & Culture",
+      "description": "Come and witness an experience of the Durbin Ta Sallah, a spectacular horsemanship parade during Eid celebrations at the Emir's Palace.",
+      "image": "images/durbin-da-sallah.webp",
+      "featured": true
+    },
+    {
+      "id": 24,
+      "name": "Argungu Fishing Festival",
+      "state": "Kebbi State",
+      "category": "Cultural Heritage",
+      "description": "Thousands leap into the river with nets for a frenetic fishing competition. A UNESCO-listed spectacle.",
+      "image": "images/argungu-fishing-festiva3.webp",
+      "featured": true
+    },
+    {
+      "id": 25,
+      "name": "Calabar Carnival",
+      "state": "Cross River State",
+      "category": "Art & Culture",
+      "description": "Africa's Biggest Street Party. A month-long celebration culminating in a dazzling parade of costumes, music, and dance every December.",
+      "image": "images/calabar_carnival.webp",
+      "featured": true
+    },
+    {
+      "id": 26,
+      "name": "Eyo Festival",
+      "state": "Lagos State",
+      "category": "Art & Culture",
+      "description": "The unique Adamu Orisha Play, a masquerade ceremony originating from Lagos Island, often staged to honor a passing Oba or dignitary.",
+      "image": "images/eyo-festival2.webp",
+      "featured": true
+    },
+    {
+      "id": 27,
+      "name": "Osun-Osogbo Festival",
+      "state": "Osun State",
+      "category": "Cultural Heritage",
+      "description": "A sacred two-week pilgrimage to the Osun Sacred Grove (a UNESCO World Heritage Site), culminating in a procession to the river goddess Osun. A powerful fusion of art, nature, and worship.",
+      "image": "images/osun-osogbo-festival4.webp",
+      "featured": true
+    },
+    {
+      "id": 28,
+      "name": "Afrika Shrine",
+      "state": "Lagos State",
+      "category": "Art & Culture",
+      "description": "The New Afrika Shrine is a pilgrimage site for the spirit of Fela Kuti, the inventor of Afro Juju music.",
+      "image": "images/africa-shrine.webp",
+      "featured": true
+    },
+    {
+      "id": 29,
+      "name": "Old Oyo National Park",
+      "state": "Oyo State",
+      "category": "Historical Site",
+      "description": "Contains the ruins of Oyo-Ile, the capital of the Old Oyo Empire, once the most politically powerful Yoruba state.",
+      "image": "images/old-oyo-national-park2.webp",
+      "featured": true
+    },
+    {
+      "id": 30,
+      "name": "Admiralty House",
+      "state": "Lagos State",
+      "category": "Architectural Site",
+      "description": "The official residence of the British Colonial Governor, a symbol of colonial authority, now used by the Nigerian Navy.",
+      "image": "images/admiralty_house.webp",
+      "featured": true
+    },
+    {
+      "id": 31,
+      "name": "First Storey Building in Nigeria",
+      "state": "Lagos State",
+      "category": "Historical Site",
+      "description": "Built by missionaries in 1845, this building now houses a museum on early missionary work and education.",
+      "image": "images/first-storey-building.webp",
+      "featured": true
+    },
+    {
+      "id": 32,
+      "name": "Dala Hill",
+      "state": "Kano State",
+      "category": "Natural Landmark",
+      "description": "The ancient iron-smelting site and settlement mound where the city of Kano was founded over 1000 years ago.",
+      "image": "images/dall-hill2.webp",
+      "featured": true
+    },
+    {
+      "id": 33,
+      "name": "Gobarau Minaret",
+      "state": "Katsina State",
+      "category": "Architectural Site",
+      "description": "The 900-year-old Gobarau Minaret is a symbol of the early introduction of Islam and Islamic scholarship in the region.",
+      "image": "images/gbarau_minaret2.webp",
+      "featured": true
+    },
   ]
 }
