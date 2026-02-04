@@ -2,4 +2,8 @@
   #places {
     grid-template-columns: repeat(3, 1fr);
   }
+    .contact-wrapper {
+      grid-template-columns: 1fr 1fr;
+      align-items: start;
+    }
 }
