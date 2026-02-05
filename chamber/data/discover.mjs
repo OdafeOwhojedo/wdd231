@@ -109,12 +109,12 @@ export const discoverItems = [
       "description": "Come enjoy nature as you sailed the many beautiful and safe creeks of Delta state."
     }
     ,
-    // {
-    //   "title": "Shoprite",
-    //   "image": "images/shoprite2.webp",
-    //   "address": "Located in Effurun Town",
-    //   "description": "All your shopping needs are met here."
-    // }
+    {
+      "title": "Shoprite",
+      "image": "images/shoprite2.webp",
+      "address": "Located in Effurun Town",
+      "description": "All your shopping needs are met here."
+    }
     ,
     {
       "title": "River Ethiope Source",
