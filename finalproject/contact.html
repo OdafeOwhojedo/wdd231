@@ -20,8 +20,9 @@
     <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 768px) and (max-width: 1023px)">
     <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 1024px)">
     <!-- JS -->
-    <script src="scripts/navigation.js"></script>
+    <script src="scripts/navigation.js" defer></script>
     <script src="scripts/places.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
 </head>
 
 <body>
@@ -98,12 +99,18 @@
             </div>
 
         </section>
+        <p class="form-trust">
+            🔒 Your information is secure. We never share personal data.
+        </p>
+
 
     </main>
 
     <!-- ================= FOOTER ================= -->
     <footer>
-        <p>© 2026 | Explore Naija</p>
+        <p>&copy; <span id="year"></span> Explore Naija</p>
+        <p>Odafe Erikevwie | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
     </footer>
 
     

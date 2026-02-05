@@ -6,4 +6,29 @@
       grid-template-columns: 1fr 1fr;
       align-items: start;
     }
+        .thank-you {
+          display: grid;
+          place-items: center;
+          min-height: 80vh;
+        }
+    
+        .thank-you-card {
+          background: #fff;
+          padding: 3rem;
+          border-radius: 16px;
+          text-align: center;
+          box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+        }
+    
+        .thank-you-actions {
+          display: flex;
+          gap: 1rem;
+          justify-content: center;
+          margin-top: 2rem;
+        }
+    
+        .cta-button.secondary {
+          background-color: #0b6e4f;
+          color: #fff;
+        }
 }
