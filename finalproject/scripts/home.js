@@ -87,12 +87,20 @@ loadFeaturedPlaces();
 /* ===========================
    Update Favorite badge
 =========================== */
-
 function updateFavoritesBadge() {
-    const badgeCount = document.querySelector("#favoritesCount");
-    if (!badgeCount) return;
+    const countEl = document.querySelector("#favoritesCount");
+    if (!countEl) return;
 
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
-    badgeCount.textContent = favorites.length;
+    countEl.textContent = favorites.length;
 }
+
+
+// function updateFavoritesBadge() {
+//     const badgeCount = document.querySelector("#favoritesCount");
+//     if (!badgeCount) return;
+
+//     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+//     badgeCount.textContent = favorites.length;
+// }
 

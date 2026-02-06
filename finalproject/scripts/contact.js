@@ -28,3 +28,10 @@ form.addEventListener("submit", (event) => {
         }, 900);
     }
 });
+function updateFavoritesBadge() {
+    const countEl = document.querySelector("#favoritesCount");
+    if (!countEl) return;
+
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    countEl.textContent = favorites.length;
+}

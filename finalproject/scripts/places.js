@@ -8,6 +8,14 @@ const showFavorites = params.get("favorites") === "true";
 
 let allPlaces = [];
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+function updateFavoritesBadge() {
+  const countEl = document.querySelector("#favoritesCount");
+  if (!countEl) return;
+
+  const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  countEl.textContent = favorites.length;
+}
+
 
 /* ===========================
    DOM Ready Guard
@@ -17,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
   const selectedPlaceId = params.get("place");
   const showFavorites = params.get("favorites") === "true";
+  updateFavoritesBadge();
 
   const openFavoritesBtn = document.querySelector("#openFavorites");
 
@@ -49,13 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  // const singlePlaceActions = document.querySelector("#singlePlaceActions");
-  // const backToAllBtn = document.querySelector("#backToAll");
-  // const viewFavoritesBtn = document.querySelector("#viewFavorites");
-
-  // if (selectedPlaceId && singlePlaceActions) {
-  //   singlePlaceActions.hidden = false;
-  // }
+  
 
 
   const placesContainer = document.querySelector("#places");
@@ -117,19 +120,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
       displayPlaces(placesToDisplay);
 
-      // allPlaces = data.places;
-
-      // if (stateFilter) populateStateFilter(allPlaces);
-      // displayPlaces(allPlaces);
+      
 
     } catch (error) {
       placesContainer.innerHTML =
         "<p>Unable to load places at this time.</p>";
       console.error(error);
     }
-    // populateCategoryFilter(allPlaces);
-    // populateStateFilter(allPlaces);
-    // displayPlaces(allPlaces);
+    
 
   }
 
@@ -175,9 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
         favorites.includes(place.id)
       );
 
-      // favBtn.textContent = favorites.includes(place.id)
-      //   ? "★ Favorited"
-      //   : "☆ Add Favorite";
+      
 
       favBtn.addEventListener("click", () =>
         toggleFavorite(place.id, favBtn)
@@ -232,18 +228,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  // function toggleFavorite(id, button) {
-  //   if (favorites.includes(id)) {
-  //     favorites = favorites.filter(fav => fav !== id);
-  //     button.textContent = "☆ Add Favorite";
-  //   } else {
-  //     favorites.push(id);
-  //     button.textContent = "★ Favorited";
-  //   }
-
-  //   localStorage.setItem("favorites", JSON.stringify(favorites));
-  //   updateFavoritesBadge();
-  // }
+  
 
   /* ===========================
      Filters
