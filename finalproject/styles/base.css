@@ -506,3 +506,37 @@ footer {
   padding: 1rem;
   text-align: center;
 }
+.single-place-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  justify-content: flex-start;
+}
+
+.single-place-actions button.secondary {
+  background-color: #0b6e4f;
+  color: #fff;
+}
+.place-card.favorite {
+  border: 2px solid #f4a261;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .place-card.favorite {
+    animation: favoritePulse 0.4s ease-out;
+  }
+
+  @keyframes favoritePulse {
+    0% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.03);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+}

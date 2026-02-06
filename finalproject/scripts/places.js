@@ -1,6 +1,10 @@
 /* ===========================
    Global State
 =========================== */
+const params = new URLSearchParams(window.location.search);
+const selectedPlaceId = params.get("place");
+const showFavorites = params.get("favorites") === "true";
+
 
 let allPlaces = [];
 let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
@@ -10,6 +14,49 @@ let favorites = JSON.parse(localStorage.getItem("favorites")) || [];
 =========================== */
 
 document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const selectedPlaceId = params.get("place");
+  const showFavorites = params.get("favorites") === "true";
+
+  const openFavoritesBtn = document.querySelector("#openFavorites");
+
+  if (openFavoritesBtn) {
+    openFavoritesBtn.addEventListener("click", () => {
+      window.location.href = "places.html?favorites=true";
+    });
+  }
+  const singlePlaceActions = document.querySelector("#singlePlaceActions");
+  const backToAllBtn = document.querySelector("#backToAll");
+  const viewFavoritesBtn = document.querySelector("#viewFavorites");
+
+  /* Show only when single place is active */
+  if (selectedPlaceId && singlePlaceActions) {
+    singlePlaceActions.hidden = false;
+  }
+
+  /* Back to all places */
+  if (backToAllBtn) {
+    backToAllBtn.addEventListener("click", () => {
+      window.location.href = "places.html";
+    });
+  }
+
+  /* View favorites */
+  if (viewFavoritesBtn) {
+    viewFavoritesBtn.addEventListener("click", () => {
+      window.location.href = "places.html?favorites=true";
+    });
+  }
+
+
+  // const singlePlaceActions = document.querySelector("#singlePlaceActions");
+  // const backToAllBtn = document.querySelector("#backToAll");
+  // const viewFavoritesBtn = document.querySelector("#viewFavorites");
+
+  // if (selectedPlaceId && singlePlaceActions) {
+  //   singlePlaceActions.hidden = false;
+  // }
+
 
   const placesContainer = document.querySelector("#places");
   const categoryFilter = document.querySelector("#filter");
@@ -29,18 +76,60 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const data = await response.json();
       allPlaces = data.places;
+      let placesToDisplay = allPlaces;
 
-      if (stateFilter) populateStateFilter(allPlaces);
-      displayPlaces(allPlaces);
+      // Single featured place
+      if (selectedPlaceId) {
+        placesToDisplay = allPlaces.filter(
+          place => place.id === Number(selectedPlaceId)
+        );
+      }
+
+      // Favorites view
+      if (showFavorites) {
+        placesToDisplay = allPlaces.filter(
+          place => favorites.includes(place.id)
+        );
+      }
+
+
+      // let placesToDisplay = allPlaces;
+
+      // ✅ If coming from Featured Places
+      if (selectedPlaceId) {
+        placesToDisplay = allPlaces.filter(
+          place => place.id === Number(selectedPlaceId)
+        );
+      }
+
+      // Populate filters ONLY when showing all places
+      if (!selectedPlaceId) {
+        populateCategoryFilter(allPlaces);
+        populateStateFilter(allPlaces);
+      }
+      if (showFavorites && placesToDisplay.length === 0) {
+        placesContainer.innerHTML = `
+    <p>You have not added any favorites yet.</p>
+  `;
+        return;
+      }
+
+
+      displayPlaces(placesToDisplay);
+
+      // allPlaces = data.places;
+
+      // if (stateFilter) populateStateFilter(allPlaces);
+      // displayPlaces(allPlaces);
 
     } catch (error) {
       placesContainer.innerHTML =
         "<p>Unable to load places at this time.</p>";
       console.error(error);
     }
-    populateCategoryFilter(allPlaces);
-    populateStateFilter(allPlaces);
-    displayPlaces(allPlaces);
+    // populateCategoryFilter(allPlaces);
+    // populateStateFilter(allPlaces);
+    // displayPlaces(allPlaces);
 
   }
 
@@ -73,9 +162,22 @@ document.addEventListener("DOMContentLoaded", () => {
       detailsBtn.addEventListener("click", () => openModal(place));
 
       const favBtn = document.createElement("button");
-      favBtn.textContent = favorites.includes(place.id)
-        ? "★ Favorited"
-        : "☆ Add Favorite";
+      favBtn.innerHTML = favorites.includes(place.id)
+        ? "★ Remove from Favorites"
+        : "☆ Add to Favorites";
+      if (favorites.includes(place.id)) {
+        card.classList.add("favorite");
+      }
+
+
+      favBtn.setAttribute(
+        "aria-pressed",
+        favorites.includes(place.id)
+      );
+
+      // favBtn.textContent = favorites.includes(place.id)
+      //   ? "★ Favorited"
+      //   : "☆ Add Favorite";
 
       favBtn.addEventListener("click", () =>
         toggleFavorite(place.id, favBtn)
@@ -111,18 +213,37 @@ document.addEventListener("DOMContentLoaded", () => {
   /* ===========================
      Favorites
   =========================== */
-
   function toggleFavorite(id, button) {
-    if (favorites.includes(id)) {
-      favorites = favorites.filter(fav => fav !== id);
-      button.textContent = "☆ Add Favorite";
+    const index = favorites.indexOf(id);
+
+    if (index > -1) {
+      favorites.splice(index, 1);
+      button.innerHTML = "☆ Add to Favorites";
+      button.setAttribute("aria-pressed", "false");
     } else {
       favorites.push(id);
-      button.textContent = "★ Favorited";
+      button.innerHTML = "★ Remove from Favorites";
+      button.setAttribute("aria-pressed", "true");
     }
+    button.closest(".place-card").classList.toggle("favorite");
 
     localStorage.setItem("favorites", JSON.stringify(favorites));
+    updateFavoritesBadge();
   }
+
+
+  // function toggleFavorite(id, button) {
+  //   if (favorites.includes(id)) {
+  //     favorites = favorites.filter(fav => fav !== id);
+  //     button.textContent = "☆ Add Favorite";
+  //   } else {
+  //     favorites.push(id);
+  //     button.textContent = "★ Favorited";
+  //   }
+
+  //   localStorage.setItem("favorites", JSON.stringify(favorites));
+  //   updateFavoritesBadge();
+  // }
 
   /* ===========================
      Filters
@@ -219,4 +340,17 @@ window.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
+if (backToAllBtn) {
+  backToAllBtn.addEventListener("click", () => {
+    window.location.href = "places.html";
+  });
+}
+
+if (viewFavoritesBtn) {
+  viewFavoritesBtn.addEventListener("click", () => {
+    window.location.href = "places.html?favorites=true";
+  });
+}
+
+updateFavoritesBadge();
 

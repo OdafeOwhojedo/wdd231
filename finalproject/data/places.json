@@ -25,8 +25,8 @@
       "name": "Osun-Osogbo Sacred Grove",
       "state": "Osun State",
       "category": "Cultural Heritage",
-      "description": "A UNESCO World Heritage Site dedicated to the goddess Osun and Yoruba traditions. It is more than a forest, it's a living artwork with sculptures dedicated to the goddess Osun",
-      "image": "images/osun_sacred_grove2.webp",
+      "description": "A UNESCO World Heritage Site dedicated to the goddess Osun and Yoruba traditions. It is more than a forest, it's a living artwork with sculptures dedicated to the goddess Osun. A dense forest sanctuary along the Osun River, dotted with ancient shrines, sculptures, and artworks dedicated to the fertility goddess Osun. The site is famous for the annual Osun-Osogbo Festival.",
+      "image": "images/osun_sacred_grove3.webp",
       "featured": true
     },
     {
@@ -61,7 +61,7 @@
       "name": "Aso Rock",
       "state": "Federal Capital Territory",
       "category": "Natural Landmark",
-      "description": "A prominent rock formation located near Nigeria’s seat of power.",
+      "description": "A prominent rock formation located near Nigeria’s seat of power. A massive monolith and the city's most noticeable feature, located near the Presidential Complex and National Assembly.",
       "image": "images/aso-rock.webp",
       "featured": false
     },
@@ -70,7 +70,7 @@
       "name": "Yankari Game Reserve",
       "state": "Bauchi State",
       "category": "Wildlife Reserve",
-      "description": "Nigeria’s most popular wildlife park, home to elephants, lions and the spectacular Wikki Warm Springs for a natural warm-water bath..",
+      "description": "The premier game reserve in Nigeria.It is Nigeria’s most popular wildlife park, home to elephants, lions and the spectacular Wikki Warm Springs for a natural warm-water bath..",
       "image": "images/yankari_game_reserve.webp",
       "featured": true
     },
@@ -79,7 +79,7 @@
       "name": "Ogbunike Caves",
       "state": "Anambra State",
       "category": "Natural Wonder",
-      "description": "A network of caves with spiritual and cultural significance. A system of interconnected caves held sacred by the local community, steeped in myth and history.",
+      "description": "A network of caves with spiritual and cultural significance. A system of interconnected caves held sacred by the local community, steeped in myth and history.Visitors can explore the interconnected tunnels and chambers.",
       "image": "images/ogbunike_caves.webp",
       "featured": false
     },
@@ -106,7 +106,7 @@
       "name": "Erin Ijesha Waterfalls",
       "state": "Osun State",
       "category": "Waterfall",
-      "description": "A seven-level waterfall surrounded by lush greenery.",
+      "description": "A seven-level waterfall surrounded by lush greenery.Also known as Olumirin Waterfalls, it's a series of seven cascading waterfalls with pools where visitors can climb and swim.",
       "image": "images/erin_ijesha_waterfalls.webp",
       "featured": false
     },
@@ -133,7 +133,7 @@
       "name": "Obudu Mountain Resort",
       "state": "Cross River State",
       "category": "Tourist Resort",
-      "description": "A popular mountain resort known for its cool climate and cable car.",
+      "description": "A popular mountain resort known for its cool climate and cable car. A stunning plateau on the Oshie Ridge of the Sankwala Mountains, with a cool climate, cable cars, breathtaking views, and hiking trails.",
       "image": "images/obudu.webp",
       "featured": true
     },
@@ -298,6 +298,204 @@
       "description": "The 900-year-old Gobarau Minaret is a symbol of the early introduction of Islam and Islamic scholarship in the region.",
       "image": "images/gobarau_minaret2.webp",
       "featured": true
+    },
+    {
+      "id": 34,
+      "name": "Ancient Nok Terracotta Sites",
+      "state": "Kaduna State",
+      "category": "Cultural Heritage",
+      "description": "he area around the Nok Village is where Africa's earliest known figurative sculptural tradition was discovered (500 BC - 200 AD). Artifacts are in the Jos Museum.",
+      "image": "images/nok_terracotta_sites.webp",
+      "featured": false
+    },
+    {
+      "id": 35,
+      "name": "Zaria City Walls",
+      "state": "Kaduna State",
+      "category": "Architectural Site",
+      "description": "Built in the 16th century by Queen Amina of Zazzau, these formidable walls secured the kingdom.",
+      "image": "images/zaria-city-wall.webp",
+      "featured": false
+    },
+    {
+      "id": 36,
+      "name": "Shehu's Palace & Shehu's Mosque",
+      "state": "Borno State",
+      "category": "Architectural Site",
+      "description": "In Maiduguri, the seat of the Kanem-Borno Empire, representing one of Africa's oldest extant Islamic states.",
+      "image": "images/shehu_palace.webp",
+      "featured": false
+    },
+    {
+      "id": 37,
+      "name": "Birnin Gwari Rock Paintings",
+      "state": "Kaduna State",
+      "category": "Historical Site",
+      "description": "Pre-historic rock art indicating early human settlement and creativity.",
+      "image": "images/birnin-gwari-rock-paintings3.webp",
+      "featured": false
+    },
+    {
+      "id": 37,
+      "name": "National War Museum",
+      "state": "Abia State",
+      "category": "Museum",
+      "description": "Houses weapons, vehicles, and documents from Nigeria's pre-colonial warfare, the colonial era, and the Nigerian Civil War (1967-1970).",
+      "image": "images/national_war_museum.webp",
+      "featured": false
+    },
+    {
+      "id": 38,
+      "name": "Arochukwu Long Juju Shrine",
+      "state": "Abia State",
+      "category": "Cultural Heritage",
+      "description": "The famous oracle that was a central instrument of power and justice for the Aro Confederacy before colonial pacification.",
+      "image": "images/arochukwu-shrine.webp",
+      "featured": false
+    },
+    {
+      "id": 39,
+      "name": "Ikom Monoliths",
+      "state": "Cross River State",
+      "category": "Tourist Resort",
+      "description": "About 300 carved standing stones with ancient inscriptions/symbols, whose meanings remain a mystery.",
+      "image": "images/ikom_monoliths.webp",
+      "featured": false
+    },
+    {
+      "id": 40,
+      "name": "Ancient Iron Smelting Sites of Lejja & Opi ",
+      "state": "Enugu State",
+      "category": "Natural Landscape",
+      "description": "Dates to 2000 BC, among the earliest evidence of iron technology in the world.",
+      "image": "images/ancient-iron-smelting2.webp",
+      "featured": false
+    },
+    {
+      "id": 41,
+      "name": "Lugard's Rest House",
+      "state": "Kogi State",
+      "category": "Historical Site",
+      "description": "Where Lord Lugard, the first Governor-General of amalgamated Nigeria, stayed. Lokoja is where the Niger and Benue meet and was the first administrative capital.",
+      "image": "images/lugard_rest_house.webp",
+      "featured": false
+    },
+    {
+      "id": 42,
+      "name": "National Museum, Lagos",
+      "state": "Lagos State",
+      "category": "Museum",
+      "description": "he country's flagship museum with collections spanning archaeology, ethnography, and colonial history.",
+      "image": "images/national-museum.webp",
+      "featured": false
+    },
+    {
+      "id": 43,
+      "name": "National Arts Theatre ",
+      "state": "Lagos State",
+      "category": "Art & Culture",
+      "description": "A iconic landmark built for the 1977 Festival of Arts and Culture (FESTAC), representing post-independence cultural ambition and modernism.",
+      "image": "images/national-arts-theatre.webp",
+      "featured": false
+    },
+    {
+      "id": 44,
+      "name": "Tarkwa Bay",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "A sheltered, artificial beach island near the Lagos Harbour, popular for swimming, water sports, and relaxation.",
+      "image": "images/tarkwa2.webp",
+      "featured": false
+    },
+    {
+      "id": 45,
+      "name": "Gurara Waterfalls",
+      "state": "Niger State",
+      "category": "Waterfall",
+      "description": "A spectacular waterfall located near the Suleja-Minna highway, popular for picnics and outings.",
+      "image": "images/gurara_falls.webp",
+      "featured": false
+    },
+    {
+      "id": 46,
+      "name": "Okomu National Park",
+      "state": "Edo State",
+      "category": "National Park",
+      "description": "A protected rainforest sanctuary home to rare forest elephants, white-throated monkeys, and a rich diversity of birds and butterflies.",
+      "image": "images/okomu-national-park.webp",
+      "featured": false
+    },
+    {
+      "id": 47,
+      "name": "Cross River National Park",
+      "state": "Cross River State",
+      "category": "National Park",
+      "description": "A UNESCO World Heritage Site candidate, it's one of Africa's oldest rainforests, home to the critically endangered Cross River Gorilla.",
+      "image": "images/cross_river_park.webp",
+      "featured": false
+    },
+    {
+      "id": 48,
+      "name": "Chad Basin National Park",
+      "state": "Borno/Yobe State",
+      "category": "Wildlife Reserve",
+      "description": "Known for its Sahel-Sudan savannah ecology and water-based activities around Lake Chad.",
+      "image": "images/chad-basin-national-park.webp",
+      "featured": false
+    },
+    {
+      "id": 49,
+      "name": "Kainji National Park",
+      "state": "Niger/Kwara State",
+      "category": "Wildlife Reserve",
+      "description": "Comprises the Borgu Game Reserve and Zugurma Game Reserve, offering a chance to see hippos, hyenas, and various antelopes.",
+      "image": "images/kanji-lake-park2.webp",
+      "featured": false
+    },
+    {
+      "id": 50,
+      "name": "La Campagne Tropicana Beach Resort",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "A unique resort blending African village ambiance with beach, mangrove forest, and lagoon.",
+      "image": "images/tropicana.webp",
+      "featured": false
+    },
+    {
+      "id": 51,
+      "name": "Ibeno Beach",
+      "state": "Akwa Ibom State",
+      "category": "Tourist Resort",
+      "description": "Reputed as the longest sand beach in West Africa, with golden sands stretching for miles.",
+      "image": "images/ibeno2.webp",
+      "featured": false
+    },
+    {
+      "id": 52,
+      "name": "Millennium Park",
+      "state": "Federal Capital Territory",
+      "category": "National Park",
+      "description": "The largest public park in Abuja, designed by architect Manfredi Nicoletti, offering a green oasis in the city center.",
+      "image": "images/millennialspark5.webp",
+      "featured": false
+    },
+    {
+      "id": 53,
+      "name": "Bar Beach",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "Popular public beache for socializing, parties, and enjoying local cuisine.",
+      "image": "images/lagos-bar-beach.webp",
+      "featured": false
+    },
+    {
+      "id": 54,
+      "name": "Ikogosi Warm Spring",
+      "state": "Ekiti State",
+      "category": "Natural Landscape",
+      "description": "unique for the confluence of warm and cold springs flowing side-by-side—a major tourist resort.",
+      "image": "images/ikogosi-warm-spring.webp",
+      "featured": false
     }
   ]
 }

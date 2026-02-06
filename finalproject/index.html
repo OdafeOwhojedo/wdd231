@@ -19,15 +19,22 @@
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 640px)">
     <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 1024px)">
+    <!-- favico -->
+    <link rel="icon" href="images/final_project_ico.ico">
     <!-- Page Script -->
     <script src="scripts/home.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/favorities.js" defer></script>
 </head>
 
 <body>
     <!-- ================= HEADER ================= -->
     <header class="site-header">
         <img src="images/nok_terracotta.webp" alt="Explore Naija logo">
+        <span class="favorites-badge" aria-live="polite">
+            ⭐ <span id="favoritesCount">0</span>
+        </span>
+
 
         <nav aria-label="Main navigation">
             <button id="menuButton" aria-label="Toggle navigation" aria-expanded="false">
@@ -168,6 +175,11 @@
             </p>
             <a href="places.html" class="cta-button">View All Places</a>
         </section>
+        <section class="features">
+            <h2>Featured Places</h2>
+            <div id="featuredPlaces" class="feature-grid reveal"></div>
+        </section>
+
         <section class="stats reveal">
             <div class="stat">
                 <span class="stat-number" data-target="36">0</span>

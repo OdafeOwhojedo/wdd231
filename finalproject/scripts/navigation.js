@@ -24,6 +24,13 @@ window.addEventListener("storage", updateFavoritesCount);
 window.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add("loaded");
 });
+function updateFavoritesBadge() {
+  const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+  const badge = document.querySelector(".favorites-badge");
+  if (badge) badge.textContent = favorites.length;
+}
+
+document.addEventListener("DOMContentLoaded", updateFavoritesBadge);
 // Footer dates
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = document.lastModified;

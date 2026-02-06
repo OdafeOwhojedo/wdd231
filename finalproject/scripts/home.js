@@ -57,3 +57,42 @@ const countObserver = new IntersectionObserver(entries => {
 });
 
 counters.forEach(c => countObserver.observe(c));
+const featuredContainer = document.querySelector("#featuredPlaces");
+
+async function loadFeaturedPlaces() {
+    const response = await fetch("data/places.json");
+    const data = await response.json();
+
+    const featured = data.places.filter(p => p.featured);
+
+    const shuffled = featured.sort(() => 0.5 - Math.random());
+    const selection = shuffled.slice(0, 3);
+
+    featuredContainer.innerHTML = "";
+
+    selection.forEach(place => {
+        const card = document.createElement("article");
+        card.innerHTML = `
+          <h3>${place.name}</h3>
+          <p>${place.state}</p>
+          <a href="places.html?place=${place.id}" class="cta-button">
+            Explore
+          </a>
+        `;
+        featuredContainer.appendChild(card);
+    });
+}
+
+loadFeaturedPlaces();
+/* ===========================
+   Update Favorite badge
+=========================== */
+
+function updateFavoritesBadge() {
+    const badgeCount = document.querySelector("#favoritesCount");
+    if (!badgeCount) return;
+
+    const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
+    badgeCount.textContent = favorites.length;
+}
+
