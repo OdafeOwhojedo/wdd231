@@ -496,6 +496,239 @@
       "description": "unique for the confluence of warm and cold springs flowing side-by-side—a major tourist resort.",
       "image": "images/ikogosi-warm-spring.webp",
       "featured": false
+    },
+    {
+      "id": 55,
+      "name": "The Wheatbaker",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "Consistently ranked #1. A Leading Hotel of the World, it offers understated luxury, exceptional art, a serene pool, and impeccable service. Perfect for discerning travelers.",
+      "image": "images/wheatbaker-exterior.webp",
+      "featured": false
+    },
+    {
+      "id": 56,
+      "name": "The George",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "A stunning, design-forward hotel with elegant rooms, a fantastic rooftop bar/restaurant, and a peaceful ambiance in the heart of Ikoyi.",
+      "image": "images/the_george_hotel.webp",
+      "featured": false
+    },{
+      "id": 57,
+      "name": "Four Points by Sheraton",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "A reliable, high-quality international brand with great amenities, multiple dining options, and a central Victoria Island location.",
+      "image": "images/four-point-by-sheraton.webp",
+      "featured": false
+    },
+    {
+      "id": 58,
+      "name": "Lagos Continental Hotel",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "Another solid 5-star option with beautiful lagoon views, a large pool, and extensive facilities.",
+      "image": "images/lagos-continental-hotel-exterior.webp",
+      "featured": false
+    },
+    {
+      "id": 59,
+      "name": "Radisson Blu Hotel",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "Known for its signature restaurant and consistent, high-standard service and rooms.",
+      "image": "images/radisson-blu.webp",
+      "featured": false
+    },
+    {
+      "id": 60,
+      "name": "Transcorp Hilton",
+      "state": "Federal Capital Territory",
+      "category": "Tourist Resort",
+      "description": "An institution. It's a landmark with massive grounds, multiple pools, numerous restaurants, and a true resort-like feel in the city center.",
+      "image": "images/transcorp_hilton.webp",
+      "featured": false
+    },
+    {
+      "id": 61,
+      "name": "La Campagne Tropicana Beach Resort",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "An African-themed beach resort about 90 mins from Lagos. Offers rustic luxury, mangrove forests, beaches, and cultural performances. A true escape from the urban chaos.",
+      "image": "images/tropicana2.webp",
+      "featured": false
+    },
+    {
+      "id": 62,
+      "name": "Ngwo Pine Forest & Waterfall",
+      "state": "Enugu State",
+      "category": "Natural Wonder",
+      "description": "A serene pine forest with a hidden waterfall that drops into a limestone cave. The cool, quiet environment is perfect for relaxation.",
+      "image": "images/ngwo-pine-forest-and-waterfall.webp",
+      "featured": false
+    },
+    {
+      "id": 63,
+      "name": "Kwa Falls",
+      "state": "Cross River State",
+      "category": "Natural Wonder",
+      "description": "A spectacular waterfall plunging from a tall cliff into a deep pool below, surrounded by dense rainforest.",
+      "image": "images/kwa_falls.webp",
+      "featured": false
+    },
+    {
+      "id": 64,
+      "name": "Farin Ruwa Waterfalls",
+      "state": "Nasawara State",
+      "category": "Natural Wonder",
+      "description": "One of Nigeria’s highest waterfalls, with water cascading dramatically over rugged cliffs—great for adventure seekers. Its name means 'White Water' in Hausa, and it's a truly majestic, often less-visited site.",
+      "image": "images/farin_waterfalls.webp",
+      "featured": false
+    },
+    {
+      "id": 65,
+      "name": "Mambilla Plateau",
+      "state": "Taraba State",
+      "category": "Natural Wonder",
+      "description": "Known as “Nigeria’s Sky High,” with rolling grasslands, cool climate, stunning vistas, and Nigeria’s highest peak, Chappal Waddi.",
+      "image": "images/mambilla-plateau.webp",
+      "featured": false
+    },
+    {
+      "id": 66,
+      "name": "Chocolate Hills of Igbeti",
+      "state": "Oyo State",
+      "category": "Natural Wonder",
+      "description": "Similar in appearance to the famous Chocolate Hills of Bohol (Philippines), these are a series of mysterious, symmetrical hills in a savannah setting.",
+      "image": "images/chocolate-hills.webp",
+      "featured": false
+    },
+    {
+      "id": 67,
+      "name": "Agbokim Waterfalls",
+      "state": "Cross River State",
+      "category": "Natural Wonder",
+      "description": "A magnificent multi-tiered waterfall that splits into seven arms as it cascades down a lush cliff into the rainforest below.",
+      "image": "images/agbokim-waterfalls.webp",
+      "featured": false
+    },
+    {
+      "id": 68,
+      "name": "Awhum Waterfall & Cave",
+      "state": "Enugu State",
+      "category": "Natural Wonder",
+      "description": "A waterfall believed to have healing powers, located near a monastery. The cave and surrounding area are peaceful and spiritually significant.It features 0m-high waterfall, spiritual cave, serene environment.",
+      "image": "images/awhum_waterfall_and_cave.webp",
+      "featured": false
+    },
+    {
+      "id": 69,
+      "name": "Oguta Lake",
+      "state": "Imo State",
+      "category": "Natural Landscape",
+      "description": "The largest natural lake in Southeastern Nigeria, known for its unique 'confluence' where its blue and greenish waters don't mix. A serene spot for boat rides and relaxation. It features a confluence of two coloured waters, boat cruises, golf course.",
+      "image": "images/oguta-lake.webp",
+      "featured": false
+    },
+    {
+      "id": 70,
+      "name": "Mandara Mountains",
+      "state": "Adamawa State",
+      "category": "Natural Landscape",
+      "description": "Forming part of the border with Cameroon, these volcanic mountains offer dramatic vistas, cool climates, and a glimpse into the lives of local mountain communities. It features hiking, scenic drives, traditional villages.",
+      "image": "images/mandara-mountains2.webp",
+      "featured": false
+    },
+    {
+      "id": 71,
+      "name": "Kamuku National Park",
+      "state": "Kaduna State",
+      "category": "Natural Landscape",
+      "description": "A protected slice of Sudanian Savannah, home to elephants, antelopes, and primates. It's less crowded than Yankari and excellent for birdwatching and nature walks. It features Savannah woodland, birdlife, hiking trails.",
+      "image": "images/kamuku_national_park.webp",
+      "featured": false
+    },
+    {
+      "id": 72,
+      "name": "Chappal Waddi (Gangirwal)",
+      "state": "Taraba State",
+      "category": "Natural Landmark",
+      "description": "The highest peak in Nigeria at 2,419 meters, located near the Cameroon border. A challenging trek through the Mambilla Plateau for serious hikers.",
+      "image": "images/chappal-waddi.webp",
+      "featured": false
+    },
+    {
+      "id": 73,
+      "name": "Eleko Beach",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "Less crowded, clean shoreline ideal for picnics and team building.",
+      "image": "images/eleko_beach.webp",
+      "featured": false
+    },
+    {
+      "id": 74,
+      "name": "Ibeno Beach",
+      "state": "Akwa Ibom State",
+      "category": "Tourist Resort",
+      "description": "One of the longest sand beaches in West Africa.",
+      "image": "images/ibeno2.webp",
+      "featured": false
+    },
+    {
+      "id": 75,
+      "name": "Ngala Lodge & Resort",
+      "state": "Cross River State",
+      "category": "Tourist Resort",
+      "description": "Cliff-top luxury resort with stunning views of the Calabar River.",
+      "image": "images/ngala-lodge.webp",
+      "featured": false
+    },
+    {
+      "id": 76,
+      "name": "Atlantic Beach Resort",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "Located on Victoria Island, offering beach access and leisure facilities.",
+      "image": "images/lekki_atlantic_beach_resort.webp",
+      "featured": false
+    },
+    {
+      "id": 77,
+      "name": "De Edge Hotel & Resort",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "Modern luxury resort with lagoon views and amenities.",
+      "image": "images/de_edge_hotel.webp",
+      "featured": false
+    },
+    {
+      "id": 78,
+      "name": "Rio Resort & Hotel",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "Family-friendly resort with pools, gardens, and play areas.",
+      "image": "images/hotel-marina-rio.webp",
+      "featured": false
+    },
+    {
+      "id": 79,
+      "name": "Bar Beach",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "Popular public beache for socializing, parties, and enjoying local cuisine.",
+      "image": "images/lagos-bar-beach.webp",
+      "featured": false
+    },
+    {
+      "id": 80,
+      "name": "Bar Beach",
+      "state": "Lagos State",
+      "category": "Tourist Resort",
+      "description": "Popular public beache for socializing, parties, and enjoying local cuisine.",
+      "image": "images/lagos-bar-beach.webp",
+      "featured": false
     }
   ]
 }
