@@ -336,15 +336,6 @@
       "featured": false
     },
     {
-      "id": 37,
-      "name": "National War Museum",
-      "state": "Abia State",
-      "category": "Museum",
-      "description": "Houses weapons, vehicles, and documents from Nigeria's pre-colonial warfare, the colonial era, and the Nigerian Civil War (1967-1970).",
-      "image": "images/national_war_museum.webp",
-      "featured": false
-    },
-    {
       "id": 38,
       "name": "Arochukwu Long Juju Shrine",
       "state": "Abia State",
@@ -618,7 +609,7 @@
       "name": "Awhum Waterfall & Cave",
       "state": "Enugu State",
       "category": "Natural Wonder",
-      "description": "A waterfall believed to have healing powers, located near a monastery. The cave and surrounding area are peaceful and spiritually significant.It features 0m-high waterfall, spiritual cave, serene environment.",
+      "description": "A waterfall believed to have healing powers, located near a monastery. The cave and surrounding area are peaceful and spiritually significant.It features 30m-high waterfall, spiritual cave, serene environment.",
       "image": "images/awhum_waterfall_and_cave.webp",
       "featured": false
     },
@@ -669,11 +660,11 @@
     },
     {
       "id": 74,
-      "name": "Ibeno Beach",
-      "state": "Akwa Ibom State",
+      "name": "Fraser Suites",
+      "state": "Federal Capital Territory",
       "category": "Tourist Resort",
-      "description": "One of the longest sand beaches in West Africa.",
-      "image": "images/ibeno2.webp",
+      "description": "Offers spacious, serviced apartments with full kitchens, ideal for families or longer visits.",
+      "image": "images/fraser-suites.webp",
       "featured": false
     },
     {
@@ -714,20 +705,38 @@
     },
     {
       "id": 79,
-      "name": "Bar Beach",
+      "name": "Hotel Bon Voyage",
       "state": "Lagos State",
       "category": "Tourist Resort",
-      "description": "Popular public beache for socializing, parties, and enjoying local cuisine.",
-      "image": "images/lagos-bar-beach.webp",
+      "description": "A fantastic boutique hotel near the airport (MM2), ideal for a first/last night or business. Excellent design and food.",
+      "image": "images/hotel-bon-voyage-exterior.webp",
       "featured": false
     },
     {
       "id": 80,
-      "name": "Bar Beach",
+      "name": "Eko Hotels & Suites",
       "state": "Lagos State",
       "category": "Tourist Resort",
-      "description": "Popular public beache for socializing, parties, and enjoying local cuisine.",
-      "image": "images/lagos-bar-beach.webp",
+      "description": "Landmark luxury hotel with pools, restaurants, and entertainment.",
+      "image": "images/eko_hotel.webp",
+      "featured": false
+    },
+    {
+      "id": 81,
+      "name": "National War Museum",
+      "state": "Abia State",
+      "category": "Museum",
+      "description": "Houses weapons, vehicles, and documents from Nigeria's pre-colonial warfare, the colonial era, and the Nigerian Civil War (1967-1970).",
+      "image": "images/national_war_museum.webp",
+      "featured": false
+    },
+    {
+      "id": 82,
+      "name": "National Museum, Oron",
+      "state": "Akwa Ibom State",
+      "category": "Museum",
+      "description": "Home to a significant collection of Ekpu ancestor figures, carved wooden monoliths of the Oron people.",
+      "image": "images/oron-museum.webp",
       "featured": false
     }
   ]
