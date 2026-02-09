@@ -23,10 +23,24 @@
 <body>
       <header class="site-header ">
         <img src="images/nok_terracotta.webp" alt="Explore Naija logo">
-        <span class="favorites-badge" aria-live="polite">
+        <div class="favorites-badge" role="button" tabindex="0" title="View saved places">
           <span class="star" aria-hidden="true">★</span>
           <span id="favoritesCount">0</span>
-        </span>
+        </div>
+
+        <!-- <button class="favorites-badge" id="favoritesBadge" aria-expanded="false" aria-describedby="favoritesTip">
+          <span class="star" aria-hidden="true">★</span>
+          <span class="count" id="favoritesCount">0</span>
+        </button>
+        
+        <span id="favoritesTip" class="visually-hidden">
+          You have 0 saved places
+        </span> -->
+
+        <!-- <span class="favorites-badge" aria-live="polite">
+          <span class="star" aria-hidden="true">★</span>
+          <span id="favoritesCount">0</span>
+        </span> -->
 
         <nav aria-label="Main navigation">
           <button id="menuButton" aria-label="Toggle navigation" aria-expanded="false">
@@ -50,10 +64,6 @@
           <button id="openFavorites" class="cta-button secondary">
             ★ View My Favorites
           </button>
-        
-          <!-- <button id="viewFavorites" class="cta-button secondary">
-            ★ View My Favorites
-          </button> -->
         </div>
 
         <div id="places" aria-label="List of places">
@@ -94,9 +104,13 @@
       </dialog>
       <!-- ================= FOOTER ================= -->
       <footer>
-        <p>&copy; <span id="year"></span> Explore Naija</p>
-        <p>Odafe Erikevwie | WDD 231</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <footer>
+          <p>&copy; <span id="year"></span> Explore Naija</p>
+          <p>Odafe Erikevwie | WDD 231</p>
+          <p>Last Modified: <span id="lastModified"></span></p>
+          <p><a href="attributions.html">Attributions</a></p> <!-- <-- new line -->
+        </footer>
+
       </footer>
   
 </body>

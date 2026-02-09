@@ -1,12 +1,16 @@
 const form = document.querySelector("#contactForm");
 
 form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
     let isValid = true;
 
     form.querySelectorAll("[required]").forEach(field => {
-        const error = field.nextElementSibling;
+        let error = field.nextElementSibling;
+
+        if (!error || !error.classList.contains("form-error")) {
+            error = document.createElement("span");
+            error.className = "form-error";
+            field.after(error);
+        }
 
         if (!field.value.trim()) {
             error.textContent = "This field is required.";
@@ -20,14 +24,12 @@ form.addEventListener("submit", (event) => {
         }
     });
 
-    if (isValid) {
-        form.classList.add("submitting");
-
-        setTimeout(() => {
-            window.location.href = "form-response.html";
-        }, 900);
+    if (!isValid) {
+        event.preventDefault(); // ⬅ block only if invalid
     }
 });
+
+/* Favorites badge sync */
 function updateFavoritesBadge() {
     const countEl = document.querySelector("#favoritesCount");
     if (!countEl) return;
@@ -35,3 +37,6 @@ function updateFavoritesBadge() {
     const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
     countEl.textContent = favorites.length;
 }
+
+updateFavoritesBadge();
+

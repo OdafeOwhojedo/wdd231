@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Attributions | Explore Naija</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/mobile.css" media="(max-width: 767px)">
+    <link rel="stylesheet" href="styles/tablet.css" media="(min-width: 768px) and (max-width: 1023px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="(min-width: 1024px)">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <img src="images/nok_terracotta.webp" alt="Explore Naija logo">
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="places.html">Places</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="padding:3rem 1rem; max-width:800px; margin:0 auto;">
+            <h1>Attributions</h1>
+            <p>This page lists sources of images and content used in Explore Naija.</p>
+            <ul>
+                <li>Durbin Ta Sallah image: <a href="https://example.com" target="_blank"
+                        rel="noopener noreferrer">example.com</a></li>
+                <li>Osun Sacred Grove image: <a href="https://example.com" target="_blank"
+                        rel="noopener noreferrer">example.com</a></li>
+                <li>Other referenced content: <a href="https://example.com" target="_blank"
+                        rel="noopener noreferrer">example.com</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Explore Naija</p>
+        <p>Odafe Erikevwie | WDD 231</p>
+        <p><a href="index.html" style="color:#f4a261;">Back to Home</a></p>
+    </footer>
+
+    <script>
+        // Automatically set the current year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

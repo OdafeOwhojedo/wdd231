@@ -3,46 +3,71 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Message Sent | Explore Naija</title>
-    <meta name="description" content="Thank you for contacting Explore Naija.">
+    <title>Message Received | Explore Naija</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/desktop.css">
-    <script>
-        document.querySelector('.thank-you').classList.add('visible');
-    </script>
+    <!-- Scripts-->
+    <script src="scripts/formresponse.js" defer></script>
 </head>
 
 <body>
 
-    <header class="site-header">
-        <img src="images/nok-terracotta.webp" alt="Explore Naija logo">
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="places.html">Places</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <main class="form-response">
 
-    <main class="thank-you reveal">
-        <section class="thank-you-card">
-            <h1>🎉 Thank You!</h1>
-            <p>Your message has been successfully sent.</p>
-            <p>We appreciate your interest in exploring Nigeria’s rich heritage.</p>
+        <article class="response-card" role="status" aria-live="polite" tabindex="-1" id="responseCard">
 
-            <div class="thank-you-actions">
-                <a href="index.html" class="cta-button">Go to Home</a>
-                <a href="places.html" class="cta-button secondary">Explore Places</a>
+            <div class="response-icon">✔</div>
+
+            <h1>Thank You for Reaching Out!</h1>
+            <p class="response-lead">
+                Your message has been successfully sent. We appreciate your interest in
+                Nigeria’s cultural and historical heritage.
+            </p>
+
+            <section class="response-summary">
+                <h2>Your Submitted Information</h2>
+
+                <dl>
+                    <dt>Full Name</dt>
+                    <dd><span id="resp-name"></span></dd>
+
+                    <dt>Email Address</dt>
+                    <dd><span id="resp-email"></span></dd>
+
+                    <dt>Subject</dt>
+                    <dd><span id="resp-subject"></span></dd>
+
+                    <dt>Message</dt>
+                    <dd><span id="resp-message"></span></dd>
+                </dl>
+            </section>
+
+            <p class="response-note">
+                We’ll review your message and respond if needed. Thank you for helping
+                us grow Explore Naija.
+            </p>
+
+            <div class="response-actions">
+                <a href="index.html" class="btn-primary">Return Home</a>
+                <a href="places.html" class="btn-secondary">Explore Places</a>
+                <a href="contact.html" class="btn-tertiary">Send Another Message
+                </a>
+
             </div>
-        </section>
+
+        </article>
+
     </main>
 
-    <script>
-        document.querySelector('.thank-you').classList.add('visible');
-    </script>
+    
 
 </body>
 

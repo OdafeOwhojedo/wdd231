@@ -50,9 +50,9 @@ function displayFavorites(places) {
     });
 }
 
-function updateFavoritesBadge() {
-    const badge = document.querySelector(".favorites-badge");
-    if (badge) badge.textContent = favorites.length;
-}
+// function updateFavoritesBadge() {
+//     const badge = document.querySelector(".favorites-badge");
+//     if (badge) badge.textContent = favorites.length;
+// }
 
 loadFavorites();

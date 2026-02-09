@@ -15,6 +15,28 @@ function updateFavoritesBadge() {
   const favorites = JSON.parse(localStorage.getItem("favorites")) || [];
   countEl.textContent = favorites.length;
 }
+document.addEventListener("DOMContentLoaded", () => {
+  const badge = document.querySelector(".favorites-badge");
+
+  if (!badge) return;
+
+  badge.addEventListener("click", () => {
+    // Only redirect when not already on favorites view
+    if (!window.location.href.includes("places.html")) {
+      window.location.href = "places.html?favorites=true";
+    } else {
+      window.location.href = "places.html?favorites=true";
+    }
+  });
+
+  badge.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      badge.click();
+    }
+  });
+});
+
 
 
 /* ===========================

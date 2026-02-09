@@ -31,10 +31,24 @@
     <!-- ================= HEADER ================= -->
     <header class="site-header">
         <img src="images/nok_terracotta.webp" alt="Explore Naija logo">
-        <span class="favorites-badge" aria-live="polite">
+        <div class="favorites-badge" role="button" tabindex="0" title="View saved places">
             <span class="star" aria-hidden="true">★</span>
             <span id="favoritesCount">0</span>
-        </span>
+        </div>
+
+        <!-- <button class="favorites-badge" id="favoritesBadge" aria-expanded="false" aria-describedby="favoritesTip">
+            <span class="star" aria-hidden="true">★</span>
+            <span class="count" id="favoritesCount">0</span>
+        </button>
+        
+        <span id="favoritesTip" class="visually-hidden">
+            You have 0 saved places
+        </span> -->
+
+        <!-- <span class="favorites-badge" aria-live="polite">
+            <span class="star" aria-hidden="true">★</span>
+            <span id="favoritesCount">0</span>
+        </span> -->
 
         <nav aria-label="Main navigation">
             <button id="menuButton" aria-label="Toggle navigation" aria-expanded="false">
@@ -86,8 +100,36 @@
             <!-- FORM -->
             <div class="contact-form">
                 <h2>Send a Message</h2>
+                <form method="get" action="form-response.html" novalidate>
+                
+                    <label for="name">Full Name</label>
+                    <input id="name" name="name" autocomplete="name" aria-describedby="nameHint nameError" aria-required="true">
+                    <small id="nameHint" class="hint">Enter your first and last name.</small>
+                    <span id="nameError" class="error">Please enter your full name.</span>
+                
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="emailHint emailError" aria-required="true">
+                    <small id="emailHint" class="hint">We’ll only use this to reply.</small>
+                    <span id="emailError" class="error">Please enter a valid email address.</span>
+                
+                    <label for="subject">Subject</label>
+                    <input id="subject" name="subject" aria-describedby="subjectHint">
+                    <small id="subjectHint" class="hint">Optional.</small>
+                
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" autocomplete="off" rows="5" required aria-describedby="messageHint messageError"
+                        aria-required="true"></textarea>
+                    <small id="messageHint" class="hint">Tell us how we can help.</small>
+                    <span id="messageError" class="error">Message cannot be empty.</span>
+                
+                    <button type="submit" class="send-btn">
+                        Send Message
+                    </button>
+                </form>
 
-                <form method="get" action="form-response.html">
+
+                <!-- <form method="get" action="form-response.html" id="contactForm">
+
                     <label for="name">Full Name</label>
                     <input id="name" name="name" required>
 
@@ -101,7 +143,7 @@
                     <textarea id="message" name="message" rows="5" required></textarea>
 
                     <button type="submit">Send Message</button>
-                </form>
+                </form> -->
             </div>
 
         </section>
@@ -114,9 +156,13 @@
 
     <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; <span id="year"></span> Explore Naija</p>
-        <p>Odafe Erikevwie | WDD 231</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <footer>
+            <p>&copy; <span id="year"></span> Explore Naija</p>
+            <p>Odafe Erikevwie | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><a href="attributions.html">Attributions</a></p> <!-- <-- new line -->
+        </footer>
+
     </footer>
 
     

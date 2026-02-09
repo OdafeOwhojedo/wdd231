@@ -31,6 +31,11 @@
     <!-- ================= HEADER ================= -->
     <header class="site-header">
         <img src="images/nok_terracotta.webp" alt="Explore Naija logo">
+        <div class="favorites-badge" role="button" tabindex="0" title="View saved places">
+            <span class="star" aria-hidden="true">★</span>
+            <span id="favoritesCount">0</span>
+        </div>
+
         <!-- <span class="favorites-badge" aria-live="polite">
             <span class="star" aria-hidden="true">★</span>
             <span id="favoritesCount">0</span>
@@ -48,9 +53,19 @@
                 <li><a href="places.html">Places</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="favorites-badge" aria-live="polite">
+            <!-- <button class="favorites-badge" id="favoritesBadge" aria-expanded="false" aria-describedby="favoritesTip">
+                <span class="star" aria-hidden="true">★</span>
+                <span class="count" id="favoritesCount">0</span>
+            </button>
+            
+            <span id="favoritesTip" class="visually-hidden">
+                You have 0 saved places
+            </span> -->
+
+            <!-- <div class="favorites-badge" aria-live="polite">
                 ★ <span id="favoritesCount">0</span>
-            </div>
+            </div> -->
+            
 
         </nav>
     </header>
@@ -69,6 +84,11 @@
                 <a href="places.html" class="cta-button">Explore Places</a>
             </div>
         </section>
+        <section id="favoritesPanel" hidden>
+            <h2>Your Favorites</h2>
+            <div id="favoritesList"></div>
+        </section>
+
 
         <!-- INTRO -->
         <section class="intro">
@@ -207,9 +227,13 @@
 
     <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; <span id="year"></span> Explore Naija</p>
-        <p>Odafe Erikevwie | WDD 231</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <footer>
+            <p>&copy; <span id="year"></span> Explore Naija</p>
+            <p>Odafe Erikevwie | WDD 231</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+            <p><a href="attributions.html">Attributions</a></p> <!-- <-- new line -->
+        </footer>
+
     </footer>
 
     
