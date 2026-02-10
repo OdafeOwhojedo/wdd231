@@ -134,7 +134,7 @@
       "state": "Cross River State",
       "category": "Tourist Resort",
       "description": "A popular mountain resort known for its cool climate and cable car. A stunning plateau on the Oshie Ridge of the Sankwala Mountains, with a cool climate, cable cars, breathtaking views, and hiking trails.",
-      "image": "images/obudu4.webp",
+      "image": "images/obudu_mountain_resort3.webp",
       "featured": true
     },
     {
@@ -269,7 +269,7 @@
       "state": "Lagos State",
       "category": "Architectural Site",
       "description": "The official residence of the British Colonial Governor, a symbol of colonial authority, now used by the Nigerian Navy.",
-      "image": "images/admiralty_house.webp",
+      "image": "images/admirality_house.webp",
       "featured": true
     },
     {
@@ -296,7 +296,7 @@
       "state": "Katsina State",
       "category": "Architectural Site",
       "description": "The 900-year-old Gobarau Minaret is a symbol of the early introduction of Islam and Islamic scholarship in the region.",
-      "image": "images/gobarau_minaret2.webp",
+      "image": "images/gobarau_minaret3.webp",
       "featured": true
     },
     {
@@ -314,7 +314,7 @@
       "state": "Kaduna State",
       "category": "Architectural Site",
       "description": "Built in the 16th century by Queen Amina of Zazzau, these formidable walls secured the kingdom.",
-      "image": "images/zaria-city-wall.webp",
+      "image": "images/zaria_city_walls.webp",
       "featured": false
     },
     {
@@ -350,7 +350,7 @@
       "state": "Cross River State",
       "category": "Tourist Resort",
       "description": "About 300 carved standing stones with ancient inscriptions/symbols, whose meanings remain a mystery.",
-      "image": "images/ikom_monoliths.webp",
+      "image": "images/ikom_monoliths3.webp",
       "featured": false
     },
     {
@@ -422,7 +422,7 @@
       "state": "Cross River State",
       "category": "National Park",
       "description": "A UNESCO World Heritage Site candidate, it's one of Africa's oldest rainforests, home to the critically endangered Cross River Gorilla.",
-      "image": "images/cross_river_park.webp",
+      "image": "images/cross-river-national-park.webp",
       "featured": false
     },
     {
@@ -448,7 +448,7 @@
       "name": "La Campagne Tropicana Beach Resort",
       "state": "Lagos State",
       "category": "Tourist Resort",
-      "description": "A unique resort blending African village ambiance with beach, mangrove forest, and lagoon.",
+      "description": "A unique resort blending African village ambiance with beach, mangrove forest, and lagoon. An African-themed beach resort about 90 mins from Lagos. Offers rustic luxury, mangrove forests, beaches, and cultural performances. A true escape from the urban chaos.",
       "image": "images/tropicana.webp",
       "featured": false
     },
@@ -503,7 +503,7 @@
       "state": "Lagos State",
       "category": "Tourist Resort",
       "description": "A stunning, design-forward hotel with elegant rooms, a fantastic rooftop bar/restaurant, and a peaceful ambiance in the heart of Ikoyi.",
-      "image": "images/the_george_hotel.webp",
+      "image": "images/the_george_hotel6.webp",
       "featured": false
     },{
       "id": 57,
@@ -543,11 +543,11 @@
     },
     {
       "id": 61,
-      "name": "La Campagne Tropicana Beach Resort",
-      "state": "Lagos State",
-      "category": "Tourist Resort",
-      "description": "An African-themed beach resort about 90 mins from Lagos. Offers rustic luxury, mangrove forests, beaches, and cultural performances. A true escape from the urban chaos.",
-      "image": "images/tropicana2.webp",
+      "name": "The Palace of the Ooni of Ife",
+      "state": "Osun State",
+      "category": "Architectural Site",
+      "description": "The Palace of the Ooni of Ife, known as Ile Oduduwa or Ile Ooni, is one of the most important royal and spiritual sites in Yorubaland and all of Africa. It is the official residence and seat of the Ooni of Ife, the traditional ruler of the ancient Yoruba kingdom of Ile-Ife, revered as the custodian of the source and cradle of Yoruba civilization  The current palace complex is a sprawling, walled compound of courtyards, residential quarters, administrative offices, and sacred shrines. It reflects traditional Yoruba architectural styles, with carved wooden posts, courtyards (ààfin), and sacred spaces.It is not just a residence but a living institution where ancient traditions, rituals, and governance are still practiced.",
+      "image": "images/ooni_palace3.webp",
       "featured": false
     },
     {
@@ -688,7 +688,7 @@
     {
       "id": 77,
       "name": "De Edge Hotel & Resort",
-      "state": "Lagos State",
+      "state": "Rivers State",
       "category": "Tourist Resort",
       "description": "Modern luxury resort with lagoon views and amenities.",
       "image": "images/de_edge_hotel.webp",
