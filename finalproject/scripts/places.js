@@ -78,10 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "places.html?favorites=true";
     });
   }
-
-
   
-
 
   const placesContainer = document.querySelector("#places");
   const categoryFilter = document.querySelector("#filter");
@@ -195,8 +192,6 @@ document.addEventListener("DOMContentLoaded", () => {
         favorites.includes(place.id)
       );
 
-      
-
       favBtn.addEventListener("click", () =>
         toggleFavorite(place.id, favBtn)
       );
@@ -248,8 +243,6 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("favorites", JSON.stringify(favorites));
     updateFavoritesBadge();
   }
-
-
   
 
   /* ===========================
@@ -306,6 +299,7 @@ document.addEventListener("DOMContentLoaded", () => {
     stateFilter.addEventListener("change", applyFilters);
   }
 });
+
 /* ===========================
    Mobile Menu Toggle
 =========================== */
@@ -334,6 +328,8 @@ document.addEventListener("click", (e) => {
     menuButton.setAttribute("aria-expanded", "false");
   }
 });
+
+
 /* ===========================
    Header Color Change on Scroll
 =========================== */
