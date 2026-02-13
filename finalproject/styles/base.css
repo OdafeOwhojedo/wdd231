@@ -64,7 +64,7 @@ header {
   padding-right: 1.25rem;
 
   /* padding: 0 1rem; */
-  color: #ffffff;
+  color: #ffffff !important;
 
   background-color: rgba(11, 110, 79, 0.85);
   backdrop-filter: blur(6px);
@@ -591,7 +591,7 @@ footer {
           width: 1px;
           height: 1px;
           overflow: hidden;
-          clip: rect(0 0 0 0);
+          
         }
     
         /* Star animation */
@@ -797,9 +797,9 @@ footer a:focus {
 =========================== */
 
 /* Header */
-.site-header,
+ 
 .site-header * {
   color: #ffffff !important;
-}
+} 
 
 
