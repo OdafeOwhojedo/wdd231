@@ -214,8 +214,55 @@ button:focus {
 /* ===========================
    HERO SECTION
 =========================== */
+/* ===========================
+   HERO SECTION
+=========================== */
 
 .hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* .hero {
   min-height: 90vh;
   display: flex;
   align-items: center;
@@ -247,7 +294,7 @@ button:focus {
 .hero p {
   font-size: 1.1rem;
   margin-bottom: 2rem;
-}
+} */
 
 /* CTA BUTTON */
 .cta-button {
@@ -440,6 +487,37 @@ section {
   top: 0;
 }
 .contact-hero {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 6rem 1rem 4rem;
+  overflow: hidden;
+}
+
+.contact-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 110, 79, 0.75);
+  z-index: 1;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* .contact-hero {
+
   background:
     linear-gradient(rgba(11, 110, 79, 0.75), rgba(11, 110, 79, 0.75)),
     url("../images/gashaka-gumtil-park3.webp");
@@ -453,7 +531,7 @@ section {
 .contact-hero-content {
   max-width: 700px;
   margin: 0 auto;
-}
+} */
 .contact-wrapper {
   display: grid;
   gap: 3rem;
