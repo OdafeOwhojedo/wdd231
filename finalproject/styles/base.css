@@ -261,6 +261,7 @@ button:focus {
   border-radius: 999px;
   font-weight: 600;
   text-decoration: none;
+  animation: pulse 2.5s ease-in-out infinite;
 }
 
 .cta-button:hover,
@@ -316,9 +317,6 @@ button:focus {
 .preview-grid article {
   border-left: 4px solid #f4a261;
   padding-left: 1rem;
-}
-.cta-button {
-  animation: pulse 2.5s ease-in-out infinite;
 }
 
 @keyframes pulse {
