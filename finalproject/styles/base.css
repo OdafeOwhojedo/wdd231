@@ -71,18 +71,10 @@ header {
   gap: 2rem;
 
   z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 
-/* .site-header {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-} */
 
 header img {
   height: 40px;
@@ -98,6 +90,9 @@ header h1 {
 section {
   padding-left: 1rem;
   padding-right: 1rem;
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 
@@ -203,10 +198,6 @@ button:focus {
    Header Scroll State
 =========================== */
 
-.site-header {
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
 .site-header.scrolled {
   background-color: rgba(11, 110, 79, 1);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
@@ -276,12 +267,6 @@ button:focus {
 .cta-button:focus {
   background-color: #e48f4a;
 }
-section {
-  padding: 3rem 1rem;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
 .features {
   background-color: #f9f9f9;
 }
@@ -348,11 +333,11 @@ section {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   .cta-button {
     animation: none;
   }
-}
+} */
 #scrollProgress {
   position: fixed;
   top: 64px;
@@ -362,20 +347,11 @@ section {
   width: 0%;
   z-index: 999;
 }
-/* .favorites-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  background-color: #f4a261;
-  color: #000;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  font-weight: 600;
-} */
 
 .favorites-badge .star {
   color: gold;
   font-size: 1rem;
+  line-height: 1;
 }
 .favorites-badge {
   display: inline-flex;
@@ -390,20 +366,6 @@ section {
   cursor: pointer;
 }
 
-.favorites-badge .star {
-  color: gold;
-  font-size: 1rem;
-  line-height: 1;
-}
-/* .favorites-badge {
-  margin-left: 1rem;
-  background-color: #f4a261;
-  color: #000;
-  padding: 0.25rem 0.6rem;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  font-weight: 600;
-} */
 .stats {
   display: grid;
   gap: 2rem;
