@@ -794,3 +794,26 @@ footer a:hover,
 footer a:focus {
   color: #FFD700;
 }
+/* ===========================
+   HEADER CONTRAST FIX
+=========================== */
+
+/* ===========================
+   ACCESSIBILITY CONTRAST FIXES
+=========================== */
+
+/* Header */
+.site-header,
+.site-header * {
+  color: #ffffff !important;
+}
+
+/* Favorites Badge */
+.favorites-badge {
+  background-color: #0b6e4f;
+}
+
+.star {
+  color: #FFD700;
+}
+
