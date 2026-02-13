@@ -342,11 +342,7 @@ button:focus {
   }
 }
 
-/* @media (prefers-reduced-motion: reduce) {
-  .cta-button {
-    animation: none;
-  }
-} */
+
 #scrollProgress {
   position: fixed;
   top: 64px;
@@ -572,19 +568,7 @@ footer {
      Favorites Badge Visibility Fix
   ========================== */
   
-    /* .site-header .favorites-badge {
-      background-color: #f4a261;
-      color: #000;
-      position: relative;
-      z-index: 1001;
-    }
-  
-    .site-header .favorites-badge .star {
-      color: gold;
-      font-size: 1rem;
-      display: inline-block;
-      line-height: 1;
-    } */
+    
         /* Screen-reader only text */
         .visually-hidden {
           position: absolute;
